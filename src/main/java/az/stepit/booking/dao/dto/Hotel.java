@@ -10,6 +10,7 @@ import java.util.List;
 @Table(name = "hotels")
 
 public class Hotel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -22,7 +23,7 @@ public class Hotel {
     @OneToMany(mappedBy = "hotel")
     List<Room> rooms;
 
-    @OneToMany(mappedBy = "picture")
+    @OneToMany(mappedBy = "hotel")
     List<Picture> pictures;
 
     private String name;

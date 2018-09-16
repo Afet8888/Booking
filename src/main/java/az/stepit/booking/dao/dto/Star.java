@@ -10,9 +10,9 @@ import java.util.List;
 @Table(name = "stars")
 
 public class Star {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
     private String name;
 

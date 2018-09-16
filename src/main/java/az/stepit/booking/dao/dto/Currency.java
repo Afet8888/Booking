@@ -11,16 +11,10 @@ import java.util.List;
 @Table(name = "currency")
 
 public class Currency {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-
-
     private Long id;
-
-    @OneToMany(mappedBy = "currency")
-    List<Advertisment> advertisments;
-
     private String name;
     private String label;
     private Boolean isActive;

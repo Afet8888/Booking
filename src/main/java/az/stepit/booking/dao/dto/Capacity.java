@@ -3,22 +3,22 @@ package az.stepit.booking.dao.dto;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
-@Table(name = "pictures")
+@Table(name = "Capacity")
 
-public class Picture {
+public class Capacity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "hotel_id")
-    private Hotel hotel;
+    @OneToMany(mappedBy = "capacity")
+    List<Room> rooms;
 
-    private String path;
+    private Integer capacity;
     private Boolean isActive;
-
 }

@@ -10,16 +10,16 @@ import java.util.List;
 @Table(name = "cities")
 
 public class City {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
 
-private Long id;
-private String name;
+    @OneToMany(mappedBy = "city")
+    List<Hotel> hotels;
 
-@OneToMany(mappedBy = "city")
-    List<Hotel>hotels;
-
-private String label;
-private Boolean isActive;
+    private String label;
+    private Boolean isActive;
 
 }
