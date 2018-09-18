@@ -9,5 +9,6 @@ public class Main {
         searchDTO.getStar().getId();
         searchDTO.getCapacity().getId();
         searchDTO.getType().getId();
+
     }
 }
