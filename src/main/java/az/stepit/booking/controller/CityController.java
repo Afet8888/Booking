@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cities")
-
 public class CityController {
 
     private CityService cityService;
