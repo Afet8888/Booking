@@ -16,7 +16,7 @@ public class User {
     private Long id;
 
     @OneToMany(mappedBy = "user")
-    List<Advertisment> advertisments;
+    List<Advertisement> advertisements;
 
     private String name;
     private String surname;

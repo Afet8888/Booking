@@ -30,7 +30,7 @@ public class CityServiceImpl implements CityService {
         if (Objects.isNull(city.getId()) || Objects.isNull(city.getName()))
             throw new RuntimeException("Bad city data");
         if (!cityRepository.existsById(city.getId()))
-            throw new RuntimeException("Nothing tu update");
+            throw new RuntimeException("Nothing to update");
         return cityRepository.save(city);
     }
 

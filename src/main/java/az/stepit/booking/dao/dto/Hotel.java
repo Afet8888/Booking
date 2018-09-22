@@ -17,7 +17,7 @@ public class Hotel {
     private Long id;
 
     @OneToOne(mappedBy = "hotel")
-    Advertisment advertisment;
+    Advertisement advertisement;
 
 
     @OneToMany(mappedBy = "hotel")
