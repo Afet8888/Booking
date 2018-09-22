@@ -1,5 +1,6 @@
 package az.stepit.booking.service.impl;
 
+import az.stepit.booking.annatation.ServiceMethod;
 import az.stepit.booking.dao.dto.Advertisement;
 import az.stepit.booking.dao.repository.AdvertisementRepository;
 import az.stepit.booking.service.AdvertisementService;
@@ -11,12 +12,13 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+@Service(ADVERTSEMENT)
 public class AdvertisementServiceImpl implements AdvertisementService {
 
     private AdvertisementRepository advertisementRepository;
 
     @Override
+    @ServiceMethod
     public Advertisement save(Advertisement advertisement) {
         if (Objects.isNull(advertisement)) throw new RuntimeException("Advertisement is not entered");
         if (Objects.isNull(advertisement.getId()))
@@ -26,6 +28,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
 
     @Override
+    @ServiceMethod(name = "update")
     public Advertisement update(Advertisement advertisement) {
         if (Objects.isNull(advertisement)) throw new RuntimeException("Advertisement is not entered");
         if (Objects.isNull(advertisement.getId()))
