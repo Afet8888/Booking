@@ -8,8 +8,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-
-
 public @interface ServiceMethod {
     String name() default "";
 }

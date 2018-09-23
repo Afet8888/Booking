@@ -9,7 +9,7 @@ public class AbstractFactory implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.context = applicationContext;
+        this.setContext(applicationContext);
     }
     public <T> T get(String name, Class<T> clazz) {
         return context.getBean(name,clazz);
@@ -21,6 +21,10 @@ public class AbstractFactory implements ApplicationContextAware {
     }
     public ApplicationContext getContext() {
         return context;
+    }
+
+    public void setContext(ApplicationContext context) {
+        this.context = context;
     }
 
 }
