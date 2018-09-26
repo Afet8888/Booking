@@ -1,7 +1,7 @@
 package az.stepit.booking.logger;
 
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Log {
     private static Logger logger = LogManager.getLogger();

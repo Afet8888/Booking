@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 public class Dao {
-    @Autowired
+
     private TestMapper mapper;
 
     public List<Test> getAllTest() {

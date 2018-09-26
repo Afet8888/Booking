@@ -3,6 +3,9 @@ package az.stepit.booking.registry;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+@Component
 
 public class AbstractFactory implements ApplicationContextAware {
     private ApplicationContext context;
@@ -20,6 +23,7 @@ public class AbstractFactory implements ApplicationContextAware {
 
     }
     public ApplicationContext getContext() {
+
         return context;
     }
 

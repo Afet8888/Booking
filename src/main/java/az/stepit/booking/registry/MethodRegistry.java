@@ -23,6 +23,7 @@ public class MethodRegistry {
     }
 
     public static void setRegistry(Map<String,Map<String,Method>> registry) {
+
         MethodRegistry.registry = registry;
     }
 

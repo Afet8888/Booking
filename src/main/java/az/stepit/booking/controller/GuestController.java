@@ -1,6 +1,5 @@
 package az.stepit.booking.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import az.stepit.booking.registry.AbstractFactory;
@@ -12,16 +11,17 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 @RestController
-public class MainController {
+@RequestMapping("/guest")
+public class GuestController {
 
     @Autowired
     AbstractFactory factory;
 
     @PostMapping("/{serviceName}/{methodName}")
-    public <T, E> E handlePost(@RequestBody T t,
+    public <T> T handlePost(@RequestBody T t,
                                @PathVariable("serviceName") String serviceName,
                                @PathVariable("methodName") String methodName) throws InvocationTargetException, IllegalAccessException {
-        return MethodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
+        return (T) MethodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
                 factory.get(serviceName, AbstractService.class), t
         );
     }

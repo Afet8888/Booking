@@ -8,7 +8,7 @@ import az.stepit.booking.service.AdvertisementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import static. az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
+import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
 
 import java.util.List;
 import java.util.Objects;
