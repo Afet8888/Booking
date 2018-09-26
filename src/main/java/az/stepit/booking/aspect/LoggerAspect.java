@@ -16,7 +16,7 @@ public class LoggerAspect {
 
     ObjectMapper mapper = new ObjectMapper();
 
-    @Around("execution(*az.stepit.booking.controller.*.*(..)) || execution(*az.stepit.booking.service.*.*(..))")
+    @Around("execution(*  az.stepit.booking.controller.*.*(..)) || execution(*   az.stepit.booking.service.*.*(..))")
     public Object log(ProceedingJoinPoint joinPoint)  throws Throwable{
         String methodName = buildMethodName(joinPoint);
         String requestData = buildRequestData(joinPoint);
@@ -33,7 +33,7 @@ public class LoggerAspect {
 
     private String buildMethodName(JoinPoint joinPoint) {
         StringBuffer buffer = new StringBuffer();
-        buffer.append(joinPoint.getTarget(),getClass().getSimpleName());
+        buffer.append(joinPoint.getTarget().getClass().getSimpleName());
         buffer.append(".");
         buffer.append(joinPoint.getSignature().getName()+ " ");
         return buffer.toString();

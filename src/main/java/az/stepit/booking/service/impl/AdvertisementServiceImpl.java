@@ -8,15 +8,16 @@ import az.stepit.booking.service.AdvertisementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service(ADVERTSEMENT)
-public class AdvertisementServiceImpl extends AbstractService; implements AdvertisementService {
+import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
+
+@Service(ADVERTISEMENT)
+public class AdvertisementServiceImpl extends AbstractService implements AdvertisementService {
 
 
     private AdvertisementRepository advertisementRepository;
