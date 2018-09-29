@@ -19,6 +19,6 @@ public class Picture {
     private Hotel hotel;
 
     private String path;
-    private Boolean isActive;
+    private Integer isActive;
 
 }

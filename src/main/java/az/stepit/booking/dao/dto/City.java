@@ -19,6 +19,6 @@ public class City {
     List<Hotel> hotels;
 
     private String label;
-    private Boolean isActive;
+    private Integer isActive;
 
 }

@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public interface HotelRepository extends CrudRepository<Hotel, Long> {
-    @Query("select c.id from Hotel c where c.isActive=true")
+    @Query("select c.id from Hotel c where c.isActive=1")
     @Modifying
     @Transactional
     public List<Long> getAllOnlyId();

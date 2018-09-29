@@ -21,7 +21,7 @@ public class User {
     private String name;
     private String surname;
     private String email;
-    private Boolean isActive;
+    private Integer isActive;
     private String login;
     private String password;
 }

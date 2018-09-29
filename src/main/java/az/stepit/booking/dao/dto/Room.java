@@ -21,7 +21,7 @@ public class Room {
     @JoinColumn(name = "hotel_id")
     private Hotel hotel;
 
-    private Boolean isActive;
+    private Integer isActive;
 
     @ManyToOne
     @JoinColumn(name = "capaity_id")

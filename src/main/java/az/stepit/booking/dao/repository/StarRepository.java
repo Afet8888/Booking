@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface StarRepository extends CrudRepository<Star, Long> {
 
-    @Query("select c.id from Star c where c.isActive=true")
+    @Query("select c.id from Star c where c.isActive=1")
     @Modifying
     @Transactional
     public List<Long> getAllOnlyId();

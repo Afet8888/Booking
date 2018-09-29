@@ -17,6 +17,6 @@ public class Currency {
     private Long id;
     private String name;
     private String label;
-    private Boolean isActive;
+    private Integer isActive;
 
 }

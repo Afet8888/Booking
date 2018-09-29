@@ -20,5 +20,5 @@ public class Star {
     List<Hotel> hotels;
 
     private String label;
-    private Boolean isActive;
+    private Integer isActive;
 }

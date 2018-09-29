@@ -20,5 +20,5 @@ public class Capacity {
     List<Room> rooms;
 
     private Integer capacity;
-    private Boolean isActive;
+    private Integer isActive;
 }

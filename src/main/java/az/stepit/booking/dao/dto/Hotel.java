@@ -38,5 +38,5 @@ public class Hotel {
 
 
     private String phoneNumber;
-    private Boolean isActive;
+    private Integer isActive;
 }

@@ -22,7 +22,7 @@ public class Advertisement {
     private String description;
     private Date lastUpdate;
     private String label;
-    private Boolean isActive;
+    private Integer isActive;
 
     @OneToOne
     @JoinColumn(name = "hotel_id")

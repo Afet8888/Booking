@@ -19,5 +19,5 @@ public class Type {
     List<Room> rooms;
 
     private String description;
-    private Boolean isActive;
+    private Integer isActive;
 }
