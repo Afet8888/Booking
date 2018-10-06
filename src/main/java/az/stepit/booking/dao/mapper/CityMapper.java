@@ -9,6 +9,12 @@ import java.util.List;
 @Mapper
 public interface CityMapper {
 
-    @Select("select id from booking.cities")
-    public List<City> getAllOnlyId();
+    @Select("Select * from booking.cities where is_active=1 and id=#(id)")
+    City getCityById(Long id);
+
+    @Select("Select * from booking.cities where is_active=1")
+    List<City> getActiveCity();
+
+    @Select("Select * from booking.cities")
+    List<City> getAllCity();
 }

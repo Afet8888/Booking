@@ -9,9 +9,12 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    @Select("Select * from booking.users")
-    List<User> getAll();
+    @Select("Select * from booking.users where is_active=1 and id=#(id)")
+    User getUserById(Long id);
+
+    @Select("Select * from booking.users where is_active=1")
+    List<User> getActiveUser();
 
     @Select("Select * from booking.users")
-    List<User> getFilterData();
+    List<User> getAllUser();
 }
