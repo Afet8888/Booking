@@ -10,7 +10,7 @@ import java.util.List;
 public interface UserMapper {
 
     @Select("Select * from booking.users where is_active=1 and id=#(id)")
-    User getUserById(Long id);
+    User getById(Long id);
 
     @Select("Select * from booking.users where is_active=1")
     List<User> getActiveUser();

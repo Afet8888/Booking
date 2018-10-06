@@ -25,9 +25,8 @@ public class Advertisement {
     private Integer isActive;
 
     @OneToOne
-    @JoinColumn(name = "hotel_id")
+    @JoinColumn(name = "advertisement_id")
     private Hotel hotel;
-
 
     @ManyToOne
     @JoinColumn(name = "user_id")

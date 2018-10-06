@@ -11,7 +11,7 @@ import java.util.List;
 public interface StarMapper {
 
     @Select("Select * from booking.stars where is_active=1 and id=#(id)")
-    Star getStarById(Long id);
+    Star getById(Long id);
 
     @Select("Select * from booking.stars where is_active=1")
     List<Star> getActiveStar();

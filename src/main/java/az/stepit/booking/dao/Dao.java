@@ -5,7 +5,6 @@ import az.stepit.booking.dao.dto.IdDTO;
 import az.stepit.booking.dao.dto.User;
 import az.stepit.booking.dao.mapper.UserMapper;
 import az.stepit.booking.dao.repository.*;
-import az.stepit.booking.model.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -34,7 +33,7 @@ public class Dao {
     HotelRepository hotelRepository;
 
     public List<User> getAllTest() {
-        return mapper.getAll();
+        return mapper.getAllUser();
     }
 
     public FilterDto getFilterDto(){
