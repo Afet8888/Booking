@@ -10,7 +10,7 @@ import java.util.List;
 @Mapper
 public interface TypeMapper {
 
-    @Select("Select * from booking.types where is_active=1 and id=#(id)")
+    @Select("Select * from booking.types where is_active=1 and id=#{id}")
     Type getById(Long id);
 
     @Select("Select * from booking.types where is_active=1")

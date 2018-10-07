@@ -18,27 +18,42 @@ public class PictureServiceImpl implements PictureService {
 
     @Override
     public Picture save(Picture picture) {
-        return null;
+        if (Objects.isNull(picture)) throw new RuntimeException("Picture is not entered");
+        if (Objects.isNull(picture.getId())) throw new RuntimeException("Bad picture data");
+        return pictureRepository.save(picture);
     }
 
     @Override
     public Picture update(Picture picture) {
-        return null;
+        if (Objects.isNull(picture)) throw new RuntimeException("Picture is not entered");
+        if (Objects.isNull(picture.getId())) throw new RuntimeException("Bad picture data");
+        if (!pictureRepository.existsById(picture.getId()))
+            throw new RuntimeException("Nothing to update");
+        return pictureRepository.save(picture);
     }
 
     @Override
     public void delete(Long id) {
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        pictureRepository.deleteById(id);
 
     }
 
     @Override
     public Picture getById(Long id) {
-        return null;
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        Optional<Picture> picture = pictureRepository.findById(id);
+        if (picture.isPresent())
+        return picture.get();
+        throw new RuntimeException("Picture is not found");
     }
 
     @Override
     public List<Picture> findAll() {
-        return null;
+        List<Picture> pictures = (List<Picture>) pictureRepository.findAll();
+        return pictures
+                .parallelStream()
+                .collect(Collectors.toList());
     }
 
     @Autowired

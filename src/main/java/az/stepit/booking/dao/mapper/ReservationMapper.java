@@ -11,11 +11,12 @@ import java.util.List;
 public interface ReservationMapper {
 
     @Results(value = {
+            @Result(property = "id",column = "id",id = true),
             @Result(property = "room",column = "room_id",javaType = Room.class,
                     many = @Many(select = "az.stepit.booking.dao.mapper.RoomMapper.getById" )),
     })
 
-    @Select("Select * from booking.reservations where is_active=1 and id=#(id)")
+    @Select("Select * from booking.reservations where is_active=1 and id=#{id}")
     Reservation getById(Long id);
 
     @Select("Select * from booking.reservations where is_active=1")

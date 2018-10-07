@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface CityMapper {
 
-    @Select("Select * from booking.cities where is_active=1 and id=#(id)")
+    @Select("Select * from booking.cities where is_active=1 and id=#{id}")
     City getById(Long id);
 
     @Select("Select * from booking.cities where is_active=1")

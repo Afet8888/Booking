@@ -1,9 +1,11 @@
 package az.stepit.booking;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("az.stepit.booking.dao.mapper")
 public class Application {
 
     /*

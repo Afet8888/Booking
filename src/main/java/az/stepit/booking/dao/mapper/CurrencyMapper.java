@@ -10,7 +10,7 @@ import java.util.List;
 @Mapper
 public interface CurrencyMapper {
 
-    @Select("Select * from booking.currency where is_active=1 and id=#(id)")
+    @Select("Select * from booking.currency where is_active=1 and id=#{id}")
     Currency getById(Long id);
 
     @Select("Select * from booking.currency where is_active=1")

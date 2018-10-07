@@ -18,7 +18,10 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     public Reservation save(Reservation reservation) {
-        return null;
+
+        if (Objects.isNull(reservation)) throw new RuntimeException("Reservation is not entered");
+        if (Objects.isNull(reservation.getId())) throw new RuntimeException("Bad reservation data");
+        return reservationRepository.save(reservation);
     }
 
     @Override

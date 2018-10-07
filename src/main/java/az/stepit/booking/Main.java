@@ -3,6 +3,7 @@ package az.stepit.booking;
 import az.stepit.booking.constant.ResponseCodeAndMessages;
 import az.stepit.booking.dao.Dao;
 import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.mapper.UserMapper;
 import az.stepit.booking.model.Response;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.annotation.PostConstruct;
 
+import static az.stepit.booking.logger.Log.info;
+
 @Component
 public class Main {
 
@@ -22,11 +25,18 @@ public class Main {
     @Autowired
     Dao dao;
 
+    @Autowired
+    AdvertisementMapper advertisementMapper;
+
     ObjectMapper mapper = new ObjectMapper();
+
+
 
     @PostConstruct
     public void init() throws JsonProcessingException, InterruptedException {
-        System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(dao.getFilterDto()));
+        info("************************************STARTING************************************");
+        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisementMapper.getActiveAdvertisement()));
+        info("************************************ENDING************************************");
         Thread.sleep(100000);
     }
 }

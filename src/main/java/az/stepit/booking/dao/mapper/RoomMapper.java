@@ -13,6 +13,7 @@ import java.util.List;
 public interface RoomMapper {
 
     @Results(value = {
+            @Result(property = "id",column = "id",id = true),
             @Result(property = "capacity",column = "capacity_id",javaType = Capacity.class,
                     many = @Many(select = "az.stepit.booking.dao.mapper.CapacityMapper.getById" )),
             @Result(property = "hotel",column = "hotel_id",javaType = Hotel.class,
@@ -22,8 +23,22 @@ public interface RoomMapper {
 
     })
 
-    @Select("Select * from booking.rooms where is_active=1 and id=#(id)")
+    @Select("Select * from booking.rooms where is_active=1 and id=#{id}")
     Room getById(Long id);
+
+
+    @Results(value = {
+            @Result(property = "id",column = "id",id = true),
+            @Result(property = "capacity",column = "capacity_id",javaType = Capacity.class,
+                    many = @Many(select = "az.stepit.booking.dao.mapper.CapacityMapper.getById" )),
+            @Result(property = "hotel",column = "hotel_id",javaType = Hotel.class,
+                    many = @Many(select = "az.stepit.booking.dao.mapper.HotelMapper.getById" )),
+            @Result(property = "type",column = "type_id",javaType = Type.class,
+                    many = @Many(select = "az.stepit.booking.dao.mapper.TypeMapper.getById" ))
+
+    })
+    @Select("Select * from booking.rooms where is_active=1 and hotel_id=#{id}")
+    List<Room> getByHotelId(Long id);
 
     @Select("Select * from booking.rooms where is_active=1")
     List<Room> getActiveRoom();
