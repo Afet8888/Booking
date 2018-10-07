@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cf02f-8a9e-4ab3-8ba4-f6f779df6758" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/hotel_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/main/Fairmont-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/main/Fairmont-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/main/Hilton.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/main/Hilton.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/main/OldEast.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/main/OldEast.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/main/vego.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/main/vego.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/slider/Fairmont-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pictures/slider/Fairmont-8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CapacityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CapacityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CurrencyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CurrencyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/HotelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/HotelMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/PictureMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/PictureMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/RoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/RoomMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/StarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/StarMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/TypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/TypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,47 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HotelMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/HotelMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PictureMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/PictureMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReservationMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/RoomMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="192">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,50 +74,97 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StarMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/StarMapper.java">
+      <file leaf-file-name="normalize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="189">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/TypeMapper.java">
+      <file leaf-file-name="hotel_page.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CapacityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CapacityMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CityMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="21">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrencyMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CurrencyMapper.java">
+      <file leaf-file-name="main_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="214">
+              <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Runnable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Runnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3150">
+              <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="55" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -209,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/annatation/ServiceMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/MethodNames.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/GuestController.java" />
@@ -260,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/PictureMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/RoomMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" />
       </list>
     </option>
   </component>
@@ -291,10 +275,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="10" />
-    <option name="width" value="1151" />
-    <option name="height" value="1002" />
+    <option name="x" value="706" />
+    <option name="y" value="8" />
+    <option name="width" value="648" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -307,7 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,52 +321,6 @@
               <item name="Booking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -407,8 +344,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,7 +356,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML_JS_AJAX/html_rust" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../booking_old" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -437,162 +375,6 @@
       <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking" />
       <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Capacity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Currency.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Picture.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Room.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Star.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Type.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/User.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CityMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/UserMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/repository/CapacityRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/repository/CityRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/repository/HotelRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/repository/StarRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/repository/TypeRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/application.properties</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/hotel_page.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main_page.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/main/Fairmont-7.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/main/Hilton.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/main/OldEast.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/main/vego.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-3.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-4.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-5.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-6.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-7.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pictures/slider/Fairmont-8.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CapacityMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CurrencyMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/HotelMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/PictureMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/RoomMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/StarMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/TypeMapper.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/reservation.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/static/index.html</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -707,6 +489,7 @@
       <workItem from="1538561814455" duration="6934000" />
       <workItem from="1538644468511" duration="13551000" />
       <workItem from="1538816299970" duration="382000" />
+      <workItem from="1538903552482" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="22.09.2018_urok">
       <created>1537626688081</created>
@@ -719,64 +502,45 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77177000" />
+    <option name="totallyTimeSpent" value="78431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1384" height="752" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32840237" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.51173186" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32849163" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123958334" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.49891776" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" weight="0.32900432" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4978903" visible="true" weight="0.15956151" />
-      <window_info id="Favorites" order="13" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="18" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.32792208" />
-      <window_info id="Structure" order="8" sideWeight="0.5021097" side_tool="true" weight="0.094791666" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3283582" />
-      <window_info id="Web" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="19" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="17" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Capture Tool" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info id="Designer" order="11" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="8" sideWeight="0.5021097" side_tool="true" weight="0.094791666" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="12" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="18" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.49891776" />
+      <window_info anchor="bottom" id="Spring" order="17" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.32792208" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4978903" visible="true" weight="0.21100917" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="Web" order="10" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="20" weight="0.3293718" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info id="UI Designer" order="12" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.565365" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -926,57 +690,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="105">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
+        <state relative-caret-position="3150">
           <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="63">
           <caret line="3" column="55" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="93" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="93" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#7;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#13;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#19;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,9 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,9 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,10 +881,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="192">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
