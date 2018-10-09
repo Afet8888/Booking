@@ -2,6 +2,7 @@ package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Capacity;
 import az.stepit.booking.dao.repository.CapacityRepository;
+import az.stepit.booking.service.AbstractService;
 import az.stepit.booking.service.CapacityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class CapacityServiceImpl implements CapacityService {
+public class CapacityServiceImpl implements AbstractService<Capacity,Long> {
 
     private CapacityRepository capacityRepository;
 

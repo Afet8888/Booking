@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
 
 @Service(ADVERTISEMENT)
-public class AdvertisementServiceImpl extends AbstractService implements AdvertisementService {
+public class AdvertisementServiceImpl implements AbstractService<Advertisement,Long>{
 
 
     private AdvertisementRepository advertisementRepository;

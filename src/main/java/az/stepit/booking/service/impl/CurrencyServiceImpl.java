@@ -2,6 +2,7 @@ package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Currency;
 import az.stepit.booking.dao.repository.CurrencyRepository;
+import az.stepit.booking.service.AbstractService;
 import az.stepit.booking.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class CurrencyServiceImpl implements CurrencyService {
+public class CurrencyServiceImpl implements AbstractService<Currency,Long> {
 
     private CurrencyRepository currencyRepository;
 

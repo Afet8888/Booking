@@ -1,10 +1,8 @@
 package az.stepit.booking.dao.mapper;
 
 
-import az.stepit.booking.dao.dto.Advertisement;
-import az.stepit.booking.dao.dto.Currency;
-import az.stepit.booking.dao.dto.Hotel;
-import az.stepit.booking.dao.dto.User;
+import az.stepit.booking.dao.dto.*;
+import az.stepit.booking.dao.provider.AdvertisementProvider;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -12,7 +10,7 @@ import java.util.List;
 @Mapper
 public interface AdvertisementMapper {
 
-    @Select("Select * from booking.advertisement where is_active=1 and id=#{id}")
+    @Select({"Select * from booking.advertisement where is_active=1 and id=#{id}"})
     Advertisement getById(Long id);
 
 
@@ -42,6 +40,7 @@ public interface AdvertisementMapper {
                     many = @Many(select = "az.stepit.booking.dao.mapper.UserMapper.getById" ))
 
     })
-    @Select("Select * from booking.advertisement where is_active=1")
-    List<Advertisement> getAllAdvertisementByFilter();
+    //@Select("Select * from booking.advertisement where is_active=1")
+    @SelectProvider(type = AdvertisementProvider.class,method = "getAllAdvertisementByFilterQuery")
+    List<Advertisement> getAllAdvertisementByFilter(SearchDTO searchDTO);
 }

@@ -2,6 +2,7 @@ package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Hotel;
 import az.stepit.booking.dao.repository.HotelRepository;
+import az.stepit.booking.service.AbstractService;
 import az.stepit.booking.service.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class HotelServiceImpl implements HotelService {
+public class HotelServiceImpl implements AbstractService<Hotel,Long> {
 
     private HotelRepository hotelRepository;
 

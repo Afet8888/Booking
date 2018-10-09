@@ -2,6 +2,7 @@ package az.stepit.booking;
 
 import az.stepit.booking.constant.ResponseCodeAndMessages;
 import az.stepit.booking.dao.Dao;
+import az.stepit.booking.dao.dto.IdDTO;
 import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.mapper.UserMapper;
@@ -31,11 +32,12 @@ public class Main {
     ObjectMapper mapper = new ObjectMapper();
 
 
-
     @PostConstruct
     public void init() throws JsonProcessingException, InterruptedException {
+        SearchDTO searchDTO = new SearchDTO();
+        searchDTO.setStar(new IdDTO(2L));
         info("************************************STARTING************************************");
-        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisementMapper.getActiveAdvertisement()));
+        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisementMapper.getAllAdvertisementByFilter(searchDTO)));
         info("************************************ENDING************************************");
         Thread.sleep(100000);
     }

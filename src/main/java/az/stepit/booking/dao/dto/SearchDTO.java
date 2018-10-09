@@ -1,7 +1,10 @@
 package az.stepit.booking.dao.dto;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class SearchDTO {
 
     private IdDTO city;
