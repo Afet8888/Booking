@@ -7,7 +7,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-@Mapper
 public interface AdvertisementMapper {
 
     @Select({"Select * from booking.advertisement where is_active=1 and id=#{id}"})

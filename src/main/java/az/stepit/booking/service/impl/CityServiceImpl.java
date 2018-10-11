@@ -20,7 +20,7 @@ public class CityServiceImpl implements AbstractService<City,Long> {
     @Override
     public City save(City city) {
         if (Objects.isNull(city)) throw new RuntimeException("City is not entered");
-        if (Objects.isNull(city.getId()) || Objects.isNull(city.getName()))
+        if (Objects.isNull(city.getName()))
             throw new RuntimeException("Bad city data");
              return cityRepository.save(city);
     }

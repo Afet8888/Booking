@@ -3,15 +3,16 @@ package az.stepit.booking.dao.dto;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class SearchDTO {
 
-    private IdDTO city;
-    private IdDTO star;
+    private List<IdDTO> cities;
+    private List<IdDTO> stars;
     private IdDTO hotel;
-    private IdDTO type;
-    private IdDTO capacity;
+    private List<IdDTO> types;
+    private List<IdDTO> capacities;
     private Float priceFrom;
     private Float priceTo;
     private Date dateFrom;

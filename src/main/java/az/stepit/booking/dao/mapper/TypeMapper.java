@@ -7,15 +7,15 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-@Mapper
+
 public interface TypeMapper {
 
-    @Select("Select * from booking.types where is_active=1 and id=#{id}")
+    @Select("Select * from booking.type where is_active=1 and id=#{id}")
     Type getById(Long id);
 
-    @Select("Select * from booking.types where is_active=1")
+    @Select("Select * from booking.type where is_active=1")
     List<Type> getActiveType();
 
-    @Select("Select * from booking.types")
+    @Select("Select * from booking.type")
     List<Type> getAllType();
 }

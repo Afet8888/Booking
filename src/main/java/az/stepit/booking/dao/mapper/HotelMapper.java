@@ -8,7 +8,7 @@ import org.apache.ibatis.type.TypeReference;
 import java.util.ArrayList;
 import java.util.List;
 
-@Mapper
+
 public interface HotelMapper {
 
 

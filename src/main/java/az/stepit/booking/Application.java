@@ -3,9 +3,14 @@ package az.stepit.booking;
 import az.stepit.booking.dao.mapper.CurrencyMapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 
-@SpringBootApplication
+@EnableAutoConfiguration
+@ComponentScan(basePackages = "az.stepit",
+        excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX,pattern = "az.stepit.booking.controller.*"))
 public class Application {
 
     /*

@@ -1,5 +1,6 @@
 package az.stepit.booking.dao.dto;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -19,6 +20,7 @@ public class Room {
 
     @ManyToOne
     @JoinColumn(name = "hotel_id")
+    @JsonBackReference
     private Hotel hotel;
 
     private Integer isActive;

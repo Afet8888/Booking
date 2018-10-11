@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-@Mapper
+
 public interface StarMapper {
 
     @Select("Select * from booking.stars where is_active=1 and id=#{id}")

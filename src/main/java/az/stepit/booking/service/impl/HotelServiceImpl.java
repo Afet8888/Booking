@@ -20,7 +20,7 @@ public class HotelServiceImpl implements AbstractService<Hotel,Long> {
     @Override
     public Hotel save(Hotel hotel) {
         if (Objects.isNull(hotel)) throw new RuntimeException("Hotel is not entered");
-        if (Objects.isNull(hotel.getId()) || Objects.isNull(hotel.getName()))
+        if (Objects.isNull(hotel.getName()))
         throw new RuntimeException("Bad hotel data");
         return hotelRepository.save(hotel);
     }
