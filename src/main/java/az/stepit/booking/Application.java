@@ -11,6 +11,7 @@ import org.springframework.context.annotation.FilterType;
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "az.stepit",
         excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX,pattern = "az.stepit.booking.controller.*"))
+//@SpringBootApplication
 public class Application {
 
     /*

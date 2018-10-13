@@ -1,9 +1,10 @@
 package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.City;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.CityMapper;
 import az.stepit.booking.dao.repository.CityRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +13,14 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.CITY;
+
+@Service (CITY)
 public class CityServiceImpl implements AbstractService<City,Long> {
 
+    @Autowired
     private CityRepository cityRepository;
+
 
     @Override
     public City save(City city) {
@@ -28,7 +33,7 @@ public class CityServiceImpl implements AbstractService<City,Long> {
     @Override
     public City update(City city) {
         if (Objects.isNull(city)) throw new RuntimeException("City is not entered");
-        if (Objects.isNull(city.getId()) || Objects.isNull(city.getName()))
+        if (Objects.isNull(city.getName()))
             throw new RuntimeException("Bad city data");
         if (!cityRepository.existsById(city.getId()))
             throw new RuntimeException("Nothing to update");
@@ -52,6 +57,11 @@ public class CityServiceImpl implements AbstractService<City,Long> {
     }
 
     @Override
+    public List<City> findAll(SearchDTO searchDTO) {
+        return null;
+    }
+
+    @Override
     public List<City> findAll() {
         List<City> cities = (List<City>) cityRepository.findAll();
         return cities
@@ -59,8 +69,4 @@ public class CityServiceImpl implements AbstractService<City,Long> {
                 .collect(Collectors.toList());
     }
 
-    @Autowired
-    public void setCityRepository(CityRepository cityRepository) {
-        this.cityRepository = cityRepository;
-    }
 }

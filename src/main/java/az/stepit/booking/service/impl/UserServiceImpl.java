@@ -1,21 +1,23 @@
 package az.stepit.booking.service.impl;
 
+import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.dto.User;
+import az.stepit.booking.dao.mapper.UserMapper;
 import az.stepit.booking.dao.repository.UserRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.USER;
+
+@Service (USER)
 public class UserServiceImpl implements AbstractService<User,Long> {
 
+    @Autowired
     private UserRepository userRepository;
+
 
     @Override
     public User save(User user) {
@@ -42,9 +44,10 @@ public class UserServiceImpl implements AbstractService<User,Long> {
         return null;
     }
 
-    @Autowired
-
-    public void setUserRepository(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    @Override
+    public List<User> findAll(SearchDTO searchDTO) {
+        return null;
     }
+
+
 }

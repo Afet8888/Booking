@@ -2,8 +2,10 @@ package az.stepit.booking.dao.mapper;
 
 
 import az.stepit.booking.dao.dto.Capacity;
+import az.stepit.booking.dao.dto.SearchDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.SelectProvider;
 
 import java.util.List;
 
@@ -17,4 +19,5 @@ public interface CapacityMapper {
 
     @Select("Select * from booking.capacity")
     List<Capacity> getAllCapacity();
+
 }

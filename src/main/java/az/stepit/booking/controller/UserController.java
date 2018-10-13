@@ -1,7 +1,6 @@
 package az.stepit.booking.controller;
 
 import az.stepit.booking.dao.dto.User;
-import az.stepit.booking.service.UserService;
 import az.stepit.booking.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

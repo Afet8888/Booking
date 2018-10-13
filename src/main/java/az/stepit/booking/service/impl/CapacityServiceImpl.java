@@ -1,9 +1,11 @@
 package az.stepit.booking.service.impl;
 
+import az.stepit.booking.annatation.ServiceMethod;
 import az.stepit.booking.dao.dto.Capacity;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.CapacityMapper;
 import az.stepit.booking.dao.repository.CapacityRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.CapacityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,20 +14,31 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.CAPACITY;
+
+@Service (CAPACITY)
 public class CapacityServiceImpl implements AbstractService<Capacity,Long> {
 
+    @Autowired
     private CapacityRepository capacityRepository;
 
+
     @Override
+    public List<Capacity> findAll(SearchDTO searchDTO) {
+        return null;
+    }
+
+    @Override
+    @ServiceMethod
     public Capacity save(Capacity capacity) {
         if (Objects.isNull(capacity)) throw new RuntimeException("Capacity is not entered");
-        if (Objects.isNull(capacity.getId()) || Objects.isNull(capacity.getName()))
+        if (Objects.isNull(capacity.getName()))
         throw new RuntimeException("Bad capacity data");
         return capacityRepository.save(capacity);
     }
 
     @Override
+    @ServiceMethod
     public Capacity update(Capacity capacity) {
         if (Objects.isNull(capacity)) throw new RuntimeException("Capacity is not entered");
         if (Objects.isNull(capacity.getId()) || Objects.isNull(capacity.getName()))
@@ -59,9 +72,5 @@ public class CapacityServiceImpl implements AbstractService<Capacity,Long> {
                 .collect(Collectors.toList());
     }
 
-    @Autowired
 
-    public void setCapacityRepository(CapacityRepository capacityRepository) {
-        this.capacityRepository = capacityRepository;
-    }
 }

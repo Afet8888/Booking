@@ -1,9 +1,12 @@
 package az.stepit.booking.service.impl;
 
+import az.stepit.booking.annatation.ServiceMethod;
+import az.stepit.booking.constant.ServiceNames;
 import az.stepit.booking.dao.dto.Hotel;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.HotelMapper;
 import az.stepit.booking.dao.repository.HotelRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +15,21 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+@Service(ServiceNames.HOTEL)
 public class HotelServiceImpl implements AbstractService<Hotel,Long> {
 
+    @Autowired
     private HotelRepository hotelRepository;
 
+
+
     @Override
+    public List<Hotel> findAll(SearchDTO searchDTO) {
+        return null;
+    }
+
+    @Override
+    @ServiceMethod
     public Hotel save(Hotel hotel) {
         if (Objects.isNull(hotel)) throw new RuntimeException("Hotel is not entered");
         if (Objects.isNull(hotel.getName()))
@@ -59,9 +71,4 @@ public class HotelServiceImpl implements AbstractService<Hotel,Long> {
                 .collect(Collectors.toList());
     }
 
-    @Autowired
-
-    public void setHotelRepository(HotelRepository hotelRepository) {
-        this.hotelRepository = hotelRepository;
-    }
 }

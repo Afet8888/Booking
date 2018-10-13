@@ -1,21 +1,29 @@
 package az.stepit.booking.service.impl;
 
+import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.dto.Type;
+import az.stepit.booking.dao.mapper.TypeMapper;
 import az.stepit.booking.dao.repository.TypeRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.TYPE;
+
+@Service (TYPE)
 public class TypeServiceImpl implements AbstractService<Type,Long> {
 
+    @Autowired
     private TypeRepository typeRepository;
+
+
+
+    @Override
+    public List<Type> findAll(SearchDTO searchDTO) {
+        return null;
+    }
 
     @Override
     public Type save(Type type) {
@@ -42,9 +50,5 @@ public class TypeServiceImpl implements AbstractService<Type,Long> {
         return null;
     }
 
-    @Autowired
 
-    public void setTypeRepository(TypeRepository typeRepository) {
-        this.typeRepository = typeRepository;
-    }
 }

@@ -2,12 +2,12 @@ package az.stepit.booking.service.impl;
 
 import az.stepit.booking.annatation.ServiceMethod;
 import az.stepit.booking.dao.dto.Advertisement;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.repository.AdvertisementRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.AdvertisementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 import java.util.List;
 import java.util.Objects;
@@ -17,10 +17,23 @@ import java.util.stream.Collectors;
 import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
 
 @Service(ADVERTISEMENT)
-public class AdvertisementServiceImpl implements AbstractService<Advertisement,Long>{
+public class AdvertisementServiceImpl implements AbstractService<Advertisement, Long> {
 
 
+    @Autowired
     private AdvertisementRepository advertisementRepository;
+
+    @Autowired
+    private AdvertisementMapper advertisementMapper;
+
+    @Override
+    @ServiceMethod
+    public List<Advertisement> findAll(SearchDTO searchDTO) {
+        List<Advertisement> advertisements = (List<Advertisement>) advertisementMapper.getAllAdvertisementByFilter(searchDTO);
+        return advertisements
+                .parallelStream()
+                .collect(Collectors.toList());
+    }
 
     @Override
     @ServiceMethod
@@ -67,9 +80,4 @@ public class AdvertisementServiceImpl implements AbstractService<Advertisement,L
                 .collect(Collectors.toList());
     }
 
-    @Autowired
-
-    public void setAdvertisementRepository(AdvertisementRepository advertisementRepository) {
-        this.advertisementRepository = advertisementRepository;
-    }
 }

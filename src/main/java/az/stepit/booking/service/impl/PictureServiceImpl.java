@@ -1,9 +1,10 @@
 package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Picture;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.PictureMapper;
 import az.stepit.booking.dao.repository.PictureRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.PictureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +13,15 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.PICTURE;
+
+@Service (PICTURE)
 public class PictureServiceImpl implements AbstractService<Picture,Long> {
 
+    @Autowired
     private PictureRepository pictureRepository;
+
+
 
     @Override
     public Picture save(Picture picture) {
@@ -31,6 +37,12 @@ public class PictureServiceImpl implements AbstractService<Picture,Long> {
         if (!pictureRepository.existsById(picture.getId()))
             throw new RuntimeException("Nothing to update");
         return pictureRepository.save(picture);
+    }
+
+    @Override
+    public List<Picture> findAll(SearchDTO searchDTO) {
+
+        return null;
     }
 
     @Override
@@ -57,9 +69,4 @@ public class PictureServiceImpl implements AbstractService<Picture,Long> {
                 .collect(Collectors.toList());
     }
 
-    @Autowired
-
-    public void setPictureRepository(PictureRepository pictureRepository) {
-        this.pictureRepository = pictureRepository;
-    }
 }

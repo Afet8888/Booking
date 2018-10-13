@@ -1,21 +1,24 @@
 package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Room;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.RoomMapper;
 import az.stepit.booking.dao.repository.RoomRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.ROOM;
+
+@Service (ROOM)
 public class RoomServiceImpl implements AbstractService<Room,Long> {
 
+    @Autowired
     private RoomRepository roomRepository;
+
+
 
     @Override
     public Room save(Room room) {
@@ -42,9 +45,10 @@ public class RoomServiceImpl implements AbstractService<Room,Long> {
         return null;
     }
 
-    @Autowired
-
-    public void setRoomRepository(RoomRepository roomRepository) {
-        this.roomRepository = roomRepository;
+    @Override
+    public List<Room> findAll(SearchDTO searchDTO) {
+        return null;
     }
+
+
 }

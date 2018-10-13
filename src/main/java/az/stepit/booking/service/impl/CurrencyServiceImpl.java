@@ -1,9 +1,10 @@
 package az.stepit.booking.service.impl;
 
 import az.stepit.booking.dao.dto.Currency;
+import az.stepit.booking.dao.dto.SearchDTO;
+import az.stepit.booking.dao.mapper.CurrencyMapper;
 import az.stepit.booking.dao.repository.CurrencyRepository;
 import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,15 +13,25 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+import static az.stepit.booking.constant.ServiceNames.CURRENCY;
+
+@Service (CURRENCY)
 public class CurrencyServiceImpl implements AbstractService<Currency,Long> {
 
+    @Autowired
     private CurrencyRepository currencyRepository;
+
+
+
+    @Override
+    public List<Currency> findAll(SearchDTO searchDTO) {
+        return null;
+    }
 
     @Override
     public Currency save(Currency currency) {
             if (Objects.isNull(currency)) throw new RuntimeException("Currency is not entered");
-            if (Objects.isNull(currency.getId()) || Objects.isNull(currency.getName()))
+            if (Objects.isNull(currency.getName()))
                 throw new RuntimeException("Bad currency data");
             return currencyRepository.save(currency);
     }
@@ -60,9 +71,5 @@ public class CurrencyServiceImpl implements AbstractService<Currency,Long> {
                 .collect(Collectors.toList());
     }
 
-    @Autowired
 
-    public void setCurrencyRepository(CurrencyRepository currencyRepository) {
-        this.currencyRepository = currencyRepository;
-    }
 }

@@ -1,18 +1,11 @@
 package az.stepit.booking.controller;
 
-import az.stepit.booking.dao.dto.Advertisement;
 import az.stepit.booking.dao.dto.Capacity;
-import az.stepit.booking.service.AbstractService;
-import az.stepit.booking.service.CapacityService;
 import az.stepit.booking.service.impl.CapacityServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-import static az.stepit.booking.constant.ServiceNames.ADVERTISEMENT;
-import static az.stepit.booking.constant.ServiceNames.CAPACITY;
 
 @RestController
 @RequestMapping("/capacity")
