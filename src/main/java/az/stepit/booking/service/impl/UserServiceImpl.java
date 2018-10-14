@@ -32,7 +32,7 @@ public class UserServiceImpl implements AbstractService<User,Long> {
     @Override
     public User update(User user) {
         if (Objects.isNull(user)) throw new RuntimeException("User is not entered");
-        if (Objects.isNull(user.getName()))
+        if (Objects.isNull(user.getId()) || Objects.isNull(user.getName()))
             throw new RuntimeException("Bad user data");
         if (!userRepository.existsById(user.getId()))
             throw new RuntimeException("Nothing to update");

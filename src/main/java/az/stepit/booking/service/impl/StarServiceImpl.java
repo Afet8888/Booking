@@ -37,7 +37,7 @@ public class StarServiceImpl implements AbstractService<Star,Long> {
     @Override
     public Star update(Star star) {
         if (Objects.isNull(star)) throw new RuntimeException("Star is not entered");
-        if (Objects.isNull(star.getId()))
+        if (Objects.isNull(star.getId()) || Objects.isNull(star.getName()))
             throw new RuntimeException("Bad star data");
         if (!starRepository.existsById(star.getId()))
             throw new RuntimeException("Nothing to update");

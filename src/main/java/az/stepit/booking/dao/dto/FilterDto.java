@@ -1,14 +1,15 @@
 package az.stepit.booking.dao.dto;
 
+import az.stepit.booking.model.FilterItem;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class FilterDto {
-    private List<IdDTO> city;
-    private List<IdDTO> star;
-    private List<IdDTO> hotel;
-    private List<IdDTO> type;
-    private List<IdDTO> capacity;
+    private List<FilterItem> city;
+    private List<FilterItem> star;
+    private List<FilterItem> hotel;
+    private List<FilterItem> type;
+    private List<FilterItem> capacity;
 }

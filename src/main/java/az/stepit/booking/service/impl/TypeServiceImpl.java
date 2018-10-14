@@ -38,7 +38,7 @@ public class TypeServiceImpl implements AbstractService<Type,Long> {
     @Override
     public Type update(Type type) {
         if (Objects.isNull(type)) throw new RuntimeException("Type is not entered");
-        if (Objects.isNull(type.getId()))
+        if (Objects.isNull(type.getId()) || Objects.isNull(type.getName()))
             throw new RuntimeException("Bad Type data");
         if (!typeRepository.existsById(type.getId()))
             throw new RuntimeException("Nothing to update");
