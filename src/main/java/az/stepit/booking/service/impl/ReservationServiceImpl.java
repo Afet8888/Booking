@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 import static az.stepit.booking.constant.ServiceNames.RESERVATION;
 
@@ -25,28 +27,41 @@ public class ReservationServiceImpl implements AbstractService<Reservation,Long>
     public Reservation save(Reservation reservation) {
 
         if (Objects.isNull(reservation)) throw new RuntimeException("Reservation is not entered");
-        if (Objects.isNull(reservation.getId())) throw new RuntimeException("Bad reservation data");
         return reservationRepository.save(reservation);
     }
 
     @Override
     public Reservation update(Reservation reservation) {
-        return null;
+        if(Objects.isNull(reservation)) throw new RuntimeException("Reservation  is not entered");
+        if (Objects.isNull(reservation.getId()))
+            throw new RuntimeException("Bad reservation data");
+        if (!reservationRepository.existsById(reservation.getId()))
+            throw new RuntimeException("Nothing to update");
+        return reservationRepository.save(reservation);
     }
 
     @Override
     public void delete(Long id) {
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        reservationRepository.deleteById(id);
 
     }
 
     @Override
     public Reservation getById(Long id) {
-        return null;
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        Optional<Reservation> reservation = reservationRepository.findById(id);
+        if (reservation.isPresent())
+            return reservation.get();
+        throw new RuntimeException("Reservation is not found");
     }
 
     @Override
     public List<Reservation> findAll() {
-        return null;
+        List<Reservation> reservations = (List<Reservation>) reservationRepository.findAll();
+        return reservations
+                .parallelStream()
+                .collect(Collectors.toList());
     }
 
     @Override

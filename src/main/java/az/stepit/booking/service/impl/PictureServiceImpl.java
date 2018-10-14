@@ -26,7 +26,6 @@ public class PictureServiceImpl implements AbstractService<Picture,Long> {
     @Override
     public Picture save(Picture picture) {
         if (Objects.isNull(picture)) throw new RuntimeException("Picture is not entered");
-        if (Objects.isNull(picture.getId())) throw new RuntimeException("Bad picture data");
         return pictureRepository.save(picture);
     }
 

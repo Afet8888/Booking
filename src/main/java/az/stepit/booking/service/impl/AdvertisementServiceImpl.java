@@ -39,8 +39,6 @@ public class AdvertisementServiceImpl implements AbstractService<Advertisement, 
     @ServiceMethod
     public Advertisement save(Advertisement advertisement) {
         if (Objects.isNull(advertisement)) throw new RuntimeException("Advertisement is not entered");
-        if (Objects.isNull(advertisement.getId()))
-            throw new RuntimeException("Bad advertisement data");
         return advertisementRepository.save(advertisement);
     }
 

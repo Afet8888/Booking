@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 import static az.stepit.booking.constant.ServiceNames.ROOM;
 
@@ -22,27 +25,42 @@ public class RoomServiceImpl implements AbstractService<Room,Long> {
 
     @Override
     public Room save(Room room) {
-        return null;
+        if (Objects.isNull(room)) throw new RuntimeException("Room is not entered");
+        return roomRepository.save(room);
     }
 
     @Override
     public Room update(Room room) {
-        return null;
+        if (Objects.isNull(room)) throw new RuntimeException("Room is not entered");
+        if (Objects.isNull(room.getId()))
+            throw new RuntimeException("Bad room data");
+        if (!roomRepository.existsById(room.getId()))
+            throw new RuntimeException("Nothing to update");
+        return roomRepository.save(room);
     }
 
     @Override
     public void delete(Long id) {
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        roomRepository.deleteById(id);
 
     }
 
     @Override
     public Room getById(Long id) {
-        return null;
+        if (Objects.isNull(id)) throw new RuntimeException("No id");
+        Optional<Room> room = roomRepository.findById(id);
+        if ((room.isPresent()))
+        return room.get();
+        throw new RuntimeException("Room is not found");
     }
 
     @Override
     public List<Room> findAll() {
-        return null;
+        List<Room> rooms = (List<Room>)  roomRepository.findAll();
+        return rooms
+                .parallelStream()
+                .collect(Collectors.toList());
     }
 
     @Override
