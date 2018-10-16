@@ -38,11 +38,11 @@ public class Dao {
 
     public FilterDto getFilterDto(){
         FilterDto dto = new FilterDto();
-        dto.setCity(buildIdDTOList(cityRepository.getAllOnlyId()));
-        dto.setStar(buildIdDTOList(starRepository.getAllOnlyId()));
-        dto.setCapacity(buildIdDTOList(capacityRepository.getAllOnlyId()));
-        dto.setType(buildIdDTOList(typeRepository.getAllOnlyId()));
-        dto.setHotel(buildIdDTOList(hotelRepository.getAllOnlyId()));
+//        dto.setCity(buildIdDTOList(cityRepository.getAllOnlyId()));
+//        dto.setStar(buildIdDTOList(starRepository.getAllOnlyId()));
+//        dto.setCapacity(buildIdDTOList(capacityRepository.getAllOnlyId()));
+//        dto.setType(buildIdDTOList(typeRepository.getAllOnlyId()));
+//        dto.setHotel(buildIdDTOList(hotelRepository.getAllOnlyId()));
         return dto;
     }
 

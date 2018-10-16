@@ -8,6 +8,9 @@ import java.util.List;
 @Data
 public class SearchDTO {
 
+    private static final int DEFAULT_LIMIT = 10;
+    private static final int DEFAULT_PAGE = 1;
+
     private List<IdDTO> cities;
     private List<IdDTO> stars;
     private IdDTO hotel;
@@ -17,5 +20,7 @@ public class SearchDTO {
     private Float priceTo;
     private Date dateFrom;
     private Date dateTo;
+    private Integer limit = DEFAULT_LIMIT;
+    private Integer page = DEFAULT_PAGE;
 
 }

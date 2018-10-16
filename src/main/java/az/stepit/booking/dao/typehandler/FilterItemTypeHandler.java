@@ -1,9 +1,10 @@
 package az.stepit.booking.dao.typehandler;
 
-import az.stepit.booking.dao.dto.City;
 import az.stepit.booking.model.FilterItem;
 import az.stepit.booking.utility.Utility;
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
@@ -14,9 +15,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+import static az.stepit.booking.utility.Utility.buildFilterItemList;
 
 public class FilterItemTypeHandler extends BaseTypeHandler<List<FilterItem>> {
+
+    private ObjectMapper mapper;
+
+    public FilterItemTypeHandler(){
+        mapper = new ObjectMapper();
+        mapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+    }
 
 
     @Override
@@ -27,21 +36,13 @@ public class FilterItemTypeHandler extends BaseTypeHandler<List<FilterItem>> {
     @Override
     public List<FilterItem> getNullableResult(ResultSet resultSet, String s) throws SQLException {
         String res = resultSet.getString(s);
-        List<FilterItem> list = new ArrayList<>();
-        try {
-            FilterItem c;
-            c = Utility.convert(res,FilterItem.class);
-            list.add(c);
-            return list;
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return buildFilterItemList(res);
     }
 
     @Override
     public List<FilterItem> getNullableResult(ResultSet resultSet, int i) throws SQLException {
-        return null;
+        String res = resultSet.getString(i);
+        return buildFilterItemList(res);
     }
 
     @Override

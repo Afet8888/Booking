@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 public class FilterDto {
+    private Integer count;
     private List<FilterItem> city;
     private List<FilterItem> star;
     private List<FilterItem> hotel;
