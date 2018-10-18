@@ -6,6 +6,7 @@ import az.stepit.booking.dao.mapper.UserMapper;
 import az.stepit.booking.dao.repository.UserRepository;
 import az.stepit.booking.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -52,6 +53,15 @@ public class UserServiceImpl implements AbstractService<User,Long> {
         if (user.isPresent())
         return user.get();
         throw new RuntimeException("User is not found");
+    }
+
+
+    public User findByUsername(String username) {
+        if (Objects.isNull(username)) throw new RuntimeException("No name");
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isPresent())
+            return user.get();
+        throw new UsernameNotFoundException(username);
     }
 
     @Override

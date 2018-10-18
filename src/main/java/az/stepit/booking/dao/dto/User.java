@@ -22,6 +22,6 @@ public class User {
     private String surname;
     private String email;
     private Integer isActive;
-    private String login;
+    private String username;
     private String password;
 }

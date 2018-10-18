@@ -1,14 +1,20 @@
 package az.stepit.booking.utility;
 
+import az.stepit.booking.constant.ResponseCodeAndMessages;
 import az.stepit.booking.model.FilterItem;
+import az.stepit.booking.model.Response;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jdk.internal.dynalink.beans.StaticClass;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import static az.stepit.booking.constant.ResponseCodeAndMessages.FAIL;
+import static az.stepit.booking.constant.ResponseCodeAndMessages.SUCCESS;
 
 public class Utility {
     private static ObjectMapper mapper;
@@ -45,5 +51,13 @@ public class Utility {
         }
 
         return list;
+    }
+
+    public static Response getSuccessfulResponse(){
+        return new Response(SUCCESS);
+    }
+
+    public static Response getInternalErrorResponse(){
+        return new Response(FAIL);
     }
 }

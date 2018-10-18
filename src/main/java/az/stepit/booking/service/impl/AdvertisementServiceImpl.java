@@ -5,6 +5,7 @@ import az.stepit.booking.dao.dto.Advertisement;
 import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.repository.AdvertisementRepository;
+import az.stepit.booking.model.AdvertisementResponse;
 import az.stepit.booking.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,10 +30,8 @@ public class AdvertisementServiceImpl implements AbstractService<Advertisement, 
     @Override
     @ServiceMethod
     public List<Advertisement> findAll(SearchDTO searchDTO) {
-        List<Advertisement> advertisements = (List<Advertisement>) advertisementMapper.getAllAdvertisementByFilter(searchDTO);
-        return advertisements
-                .parallelStream()
-                .collect(Collectors.toList());
+        List<Advertisement> advertisements = advertisementMapper.getAllAdvertisementByFilter(searchDTO);
+        return advertisements;
     }
 
     @Override

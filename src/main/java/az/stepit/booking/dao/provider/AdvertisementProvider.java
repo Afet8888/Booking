@@ -11,11 +11,13 @@ public class AdvertisementProvider {
     public String getAllAdvertisementByFilterQuery(SearchDTO searchDTO){
         return "select ad.* from advertisement ad\n" +
                 "inner join rooms r on r.hotel_id = ad.hotel_id\n" +
-                "inner join capacity cap on cap.id = r.capaity_id\n" +
+                "inner join capacity cap on cap.id = r.capacity_id\n" +
                 "inner join \"type\" t on t.id = r.type_id\n" +
                 "inner join hotels h on h.id = ad.hotel_id\n" +
                 "inner join stars s on s.id = h.star_id\n" +
-                "inner join cities c on c.id = h.city_id where ad.is_active=1 and r.is_active=1 and cap.is_active=1 and t.is_active=1 and h.is_active=1 and s.is_active=1 and c.is_active=1 "
+                "inner join cities c on c.id = h.city_id" +
+                " left join reservation res on res.room_id = r.id "+
+                " where ad.is_active=1 and r.is_active=1 and cap.is_active=1 and t.is_active=1 and h.is_active=1 and s.is_active=1 and c.is_active=1 "
                 + buildCondition(searchDTO);
     }
 
@@ -30,11 +32,13 @@ public class AdvertisementProvider {
                 "jsonb_agg(distinct jsonb_build_object('id',h.id,'name',h.name,'label',h.\"name\")::text) \"hotel\" " +
                 "from advertisement ad\n" +
                 "inner join rooms r on r.hotel_id = ad.hotel_id\n" +
-                "inner join capacity cap on cap.id = r.capaity_id\n" +
+                "inner join capacity cap on cap.id = r.capacity_id\n" +
                 "inner join \"type\" t on t.id = r.type_id\n" +
                 "inner join hotels h on h.id = ad.hotel_id\n" +
                 "inner join stars s on s.id = h.star_id\n" +
-                "inner join cities c on c.id = h.city_id where ad.is_active=1 and r.is_active=1 and cap.is_active=1 and t.is_active=1 and h.is_active=1 and s.is_active=1 and c.is_active=1 "
+                "inner join cities c on c.id = h.city_id" +
+                " left join reservation res on res.room_id = r.id "+
+                " where ad.is_active=1 and r.is_active=1 and cap.is_active=1 and t.is_active=1 and h.is_active=1 and s.is_active=1 and c.is_active=1 "
                 + buildCondition(searchDTO);
     }
 
@@ -50,8 +54,16 @@ public class AdvertisementProvider {
         if ((temp=conditionFromList(searchDTO.getTypes(),"t.id"))!=null) s.append(temp);
         if (searchDTO.getPriceFrom()!=null) s.append(" and r.price >= #{priceFrom} ");
         if (searchDTO.getPriceTo()!=null) s.append(" and r.price <= #{priceTo} ");
-        if (searchDTO.getDateFrom()!=null) s.append(" and r.available_date_from >= #{dateFrom} ");
-        if (searchDTO.getDateTo()!=null) s.append(" and r.available_date_to <= #{dateTo} ");
+        if (searchDTO.getDateFrom()!=null) {
+            s.append(" and r.available_date_from <= #{dateFrom} ");
+            s.append(" and (res.end_date < #{dateFrom} ");
+            s.append(" or res.start_date > #{dateFrom}) ");
+        }
+        if (searchDTO.getDateTo()!=null) {
+            s.append(" and (res.end_date < #{dateTo} ");
+            s.append(" or res.start_date > #{dateTo}) ");
+            s.append(" and r.available_date_to >= #{dateTo} ");
+        }
         if (Objects.nonNull(searchDTO.getLimit()))s.append(" limit "+searchDTO.getLimit());
         if (Objects.nonNull(searchDTO.getPage()))s.append(" offset "+(searchDTO.getLimit()*(searchDTO.getPage()-1)));
         return s.toString();

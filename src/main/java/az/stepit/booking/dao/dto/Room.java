@@ -26,7 +26,7 @@ public class Room {
     private Integer isActive;
 
     @ManyToOne
-    @JoinColumn(name = "capaity_id")
+    @JoinColumn(name = "capacity_id")
     private Capacity capacity;
 
     @ManyToOne
