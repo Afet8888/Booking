@@ -15,13 +15,14 @@ import java.util.stream.Collectors;
 
 import static az.stepit.booking.constant.ServiceNames.PICTURE;
 
-@Service (PICTURE)
-public class PictureServiceImpl implements AbstractService<Picture,Long> {
+@Service(PICTURE)
+public class PictureServiceImpl implements AbstractService<Picture, Long> {
 
     @Autowired
     private PictureRepository pictureRepository;
 
-
+    @Autowired
+    private PictureMapper pictureMapper;
 
     @Override
     public Picture save(Picture picture) {
@@ -56,13 +57,13 @@ public class PictureServiceImpl implements AbstractService<Picture,Long> {
         if (Objects.isNull(id)) throw new RuntimeException("No id");
         Optional<Picture> picture = pictureRepository.findById(id);
         if (picture.isPresent())
-        return picture.get();
+            return picture.get();
         throw new RuntimeException("Picture is not found");
     }
 
     @Override
     public List<Picture> findAll() {
-        List<Picture> pictures = (List<Picture>) pictureRepository.findAll();
+        List<Picture> pictures = (List<Picture>) pictureMapper.getAllPicture();
         return pictures
                 .parallelStream()
                 .collect(Collectors.toList());

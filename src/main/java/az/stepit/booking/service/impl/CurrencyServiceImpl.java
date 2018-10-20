@@ -21,6 +21,9 @@ public class CurrencyServiceImpl implements AbstractService<Currency,Long> {
     @Autowired
     private CurrencyRepository currencyRepository;
 
+    @Autowired
+    private CurrencyMapper currencyMapper;
+
 
 
     @Override
@@ -65,7 +68,7 @@ public class CurrencyServiceImpl implements AbstractService<Currency,Long> {
 
     @Override
     public List<Currency> findAll() {
-        List<Currency> currencies = (List<Currency>) currencyRepository.findAll();
+        List<Currency> currencies = (List<Currency>) currencyMapper.getAllCurrency();
         return currencies
                 .parallelStream()
                 .collect(Collectors.toList());

@@ -21,6 +21,9 @@ public class TypeServiceImpl implements AbstractService<Type,Long> {
     @Autowired
     private TypeRepository typeRepository;
 
+    @Autowired
+    private TypeMapper typeMapper;
+
 
 
     @Override
@@ -63,7 +66,7 @@ public class TypeServiceImpl implements AbstractService<Type,Long> {
 
     @Override
     public List<Type> findAll() {
-        List<Type> types = (List<Type>) typeRepository.findAll();
+        List<Type> types = (List<Type>) typeMapper.getAllType();
         return types
                 .parallelStream()
                 .collect(Collectors.toList());

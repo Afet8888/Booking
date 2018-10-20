@@ -22,6 +22,9 @@ public class CapacityServiceImpl implements AbstractService<Capacity,Long> {
     @Autowired
     private CapacityRepository capacityRepository;
 
+    @Autowired
+    private CapacityMapper capacityMapper;
+
 
     @Override
     public List<Capacity> findAll(SearchDTO searchDTO) {
@@ -66,7 +69,7 @@ public class CapacityServiceImpl implements AbstractService<Capacity,Long> {
 
     @Override
     public List<Capacity> findAll() {
-        List<Capacity> capacities = (List<Capacity>) capacityRepository.findAll();
+        List<Capacity> capacities = (List<Capacity>) capacityMapper.getAllCapacity();
         return capacities
                 .parallelStream()
                 .collect(Collectors.toList());

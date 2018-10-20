@@ -9,9 +9,7 @@ import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.mapper.FilterMapper;
 import az.stepit.booking.dao.mapper.UserMapper;
 import az.stepit.booking.model.AdvertisementResponse;
-import az.stepit.booking.service.impl.AdvertisementServiceImpl;
-import az.stepit.booking.service.impl.BookingService;
-import az.stepit.booking.service.impl.FilterService;
+import az.stepit.booking.service.impl.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +47,29 @@ public class Main {
     @Autowired
     BookingService bookingService;
 
+    @Autowired
+    StarServiceImpl starService;
+
+    @Autowired
+    CapacityServiceImpl capacityService;
+
+    @Autowired
+    CurrencyServiceImpl currencyService;
+
+    @Autowired
+    HotelServiceImpl hotelService;
+
+    @Autowired
+    PictureServiceImpl pictureService;
+
+    @Autowired
+    RoomServiceImpl roomService;
+
+    @Autowired
+    TypeServiceImpl typeService;
+
+    @Autowired
+    UserServiceImpl userService;
 
     @PostConstruct
     public void init() throws JsonProcessingException, InterruptedException, ParseException {
@@ -62,24 +83,17 @@ public class Main {
         searchDTO.setDateTo(dateTo);
         //searchDTO.setLimit(1);
         AdvertisementResponse response = bookingService.getAdvertisementAndFilter(searchDTO);
-        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(response));
-//        List<Advertisement> advertisements = service.findAll(searchDTO);
-//        FilterDto filterData = filterService.findAll(searchDTO).get(0);
-//        info("************************************STARTING************************************");
-//        info("************************************START ADVERTISEMENTS************************************");
-//        advertisements.forEach((advertisement -> {
-//            try {
-//                info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisement));
-//            } catch (JsonProcessingException e) {
-//                e.printStackTrace();
-//            }
-//        }));
-//        info("************************************ END ADVERTISEMENTS************************************");
-//        info("************************************START FILTER ************************************");
-//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(filterData));
-//        info("************************************END FILTER ************************************");
-//
-//        info("************************************ENDING************************************");
+        //info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(response));
+
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(starService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(capacityService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(currencyService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(hotelService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pictureService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(roomService.findAll()));
+//        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(typeService.findAll()));
+        info(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(userService.findAll()));
+
         Thread.sleep(1000000);
     }
 }

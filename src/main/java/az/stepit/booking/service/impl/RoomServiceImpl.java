@@ -21,6 +21,9 @@ public class RoomServiceImpl implements AbstractService<Room,Long> {
     @Autowired
     private RoomRepository roomRepository;
 
+    @Autowired
+    private RoomMapper roomMapper;
+
 
 
     @Override
@@ -57,7 +60,7 @@ public class RoomServiceImpl implements AbstractService<Room,Long> {
 
     @Override
     public List<Room> findAll() {
-        List<Room> rooms = (List<Room>)  roomRepository.findAll();
+        List<Room> rooms = (List<Room>)  roomMapper.getAllRoom();
         return rooms
                 .parallelStream()
                 .collect(Collectors.toList());

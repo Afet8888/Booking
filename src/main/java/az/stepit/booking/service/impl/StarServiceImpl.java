@@ -21,6 +21,9 @@ public class StarServiceImpl implements AbstractService<Star,Long> {
     @Autowired
     private StarRepository starRepository;
 
+    @Autowired
+    private StarMapper starMapper;
+
 
 
     @Override
@@ -62,7 +65,7 @@ public class StarServiceImpl implements AbstractService<Star,Long> {
 
     @Override
     public List<Star> findAll() {
-        List<Star> stars = (List<Star>) starRepository.findAll();
+        List<Star> stars = (List<Star>) starMapper.getAllStar();
         return stars
                 .parallelStream()
                 .collect(Collectors.toList());

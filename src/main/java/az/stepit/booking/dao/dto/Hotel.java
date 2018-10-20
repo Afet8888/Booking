@@ -20,12 +20,12 @@ public class Hotel {
     @OneToOne(mappedBy = "hotel")
     Advertisement advertisement;
 
-
-    @OneToMany(mappedBy = "hotel")
+    @OneToMany(mappedBy = "hotel",cascade = CascadeType.ALL)
             @JsonManagedReference
     List<Room> rooms;
 
-    @OneToMany(mappedBy = "hotel")
+    @OneToMany(mappedBy = "hotel",cascade = CascadeType.ALL)
+            @JsonManagedReference
     List<Picture> pictures;
 
     private String name;
@@ -37,7 +37,6 @@ public class Hotel {
     @ManyToOne
     @JoinColumn(name = "star_id")
     private Star star;
-
 
     private String phoneNumber;
     private Integer isActive;

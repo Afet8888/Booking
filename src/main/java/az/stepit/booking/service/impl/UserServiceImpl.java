@@ -22,6 +22,9 @@ public class UserServiceImpl implements AbstractService<User,Long> {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private UserMapper userMapper;
+
 
     @Override
     public User save(User user) {
@@ -66,7 +69,7 @@ public class UserServiceImpl implements AbstractService<User,Long> {
 
     @Override
     public List<User> findAll() {
-        List<User>users = (List<User>) userRepository.findAll();
+        List<User>users = (List<User>) userMapper.getAllUser();
         return users
                 .parallelStream()
                 .collect(Collectors.toList());
