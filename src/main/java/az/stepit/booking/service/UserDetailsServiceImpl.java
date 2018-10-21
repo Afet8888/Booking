@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import static java.util.Collections.emptyList;
 
-@Service
+@Service("userDetailService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
 

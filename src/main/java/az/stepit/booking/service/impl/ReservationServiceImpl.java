@@ -22,7 +22,6 @@ public class ReservationServiceImpl implements AbstractService<Reservation,Long>
     private ReservationRepository reservationRepository;
 
 
-
     @Override
     public Reservation save(Reservation reservation) {
 
