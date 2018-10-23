@@ -11,4 +11,6 @@ public class SecurityConstants {
     public static final String HEADER_STRING = "Authorization";
     public static final String SIGN_UP_URL = "/users/signUp";
     public static final String TEST = "/advertisement/getAllAdvertisements";
+    public static final String TEST2 = "/cities/findAll";
+    public static final String ALL = "/**";
 }

@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cf02f-8a9e-4ab3-8ba4-f6f779df6758" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/utility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserControllerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/filters/JWTAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/filters/JWTAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/ReservationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,89 +73,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserControllerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserControllerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="400">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/urls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="100">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertisementController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java">
+      <file leaf-file-name="utility.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/utility.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="39" />
-              <folding>
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1295#1296#0" expanded="true" />
-                <element signature="e#1372#1373#0" expanded="true" />
-                <element signature="e#1427#1428#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/SearchDTO.java">
+      <file leaf-file-name="City.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="140">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
+      <file leaf-file-name="Hotel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="149" column="180" selection-start-line="149" selection-end-line="149" selection-end-column="180" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#6;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#12;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="179">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -169,13 +130,8 @@
       <file leaf-file-name="Conf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-              <folding>
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -183,8 +139,32 @@
       <file leaf-file-name="SecurityConstants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="280">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSecurity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,8 +176,9 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -222,13 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/filters/JWTAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/typehandler/ArrayHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/model/FilterItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/typehandler/CityTypeHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/typehandler/FilterItemTypeHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/Runnable.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/Queries.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/ServiceTest.java" />
@@ -245,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/BookingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/provider/AdvertisementProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/StarServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CapacityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CurrencyServiceImpl.java" />
@@ -267,11 +240,19 @@
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Advertisement.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/filters/JWTAuthorizationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserControllerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/CityController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/Utility.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/utility.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/urls.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/test.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/test.js" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java" />
       </list>
     </option>
@@ -320,9 +301,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -651,7 +632,8 @@
       <workItem from="1539701946380" duration="10697000" />
       <workItem from="1539873422905" duration="9345000" />
       <workItem from="1540033363790" duration="10307000" />
-      <workItem from="1540120814902" duration="8068000" />
+      <workItem from="1540120814902" duration="8202000" />
+      <workItem from="1540305512957" duration="8177000" />
     </task>
     <task id="LOCAL-00001" summary="22.09.2018_urok">
       <created>1537626688081</created>
@@ -702,15 +684,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540044616481</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="22.10.2018_urok">
+      <created>1540131845880</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540131845880</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139823000" />
+    <option name="totallyTimeSpent" value="148134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" weight="0.32900432" />
@@ -730,10 +718,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="18" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.2375924" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.15417106" />
       <window_info anchor="bottom" id="Spring" order="17" />
       <window_info anchor="bottom" id="Terminal" order="15" weight="0.32629356" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4978903" visible="true" weight="0.2546875" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4978903" visible="true" weight="0.25416666" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="10" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -764,7 +752,8 @@
     <MESSAGE value="16.10.2018_urok" />
     <MESSAGE value="18.10.2018_urok" />
     <MESSAGE value="20.10.2018_urok" />
-    <option name="LAST_COMMIT_MESSAGE" value="20.10.2018_urok" />
+    <MESSAGE value="22.10.2018_urok" />
+    <option name="LAST_COMMIT_MESSAGE" value="22.10.2018_urok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,65 +765,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/provider/AdvertisementProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/BookingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/model/AdvertisementResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Star.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/HotelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Room.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/AdvertisementServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -884,13 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -961,9 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <marker date="1540121901311" expanded="true" signature="2:1202" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,9 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,16 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1604">
           <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1066,23 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="2980">
           <caret line="149" column="180" selection-start-line="149" selection-end-line="149" selection-end-column="180" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#6;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#12;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1095,18 +991,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserControllerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
+        <state relative-caret-position="220">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1124,49 +1013,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/AdvertisementServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/http/HttpMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/CityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/CityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/constant/SecurityConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebSecurity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+        <state relative-caret-position="450">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/AdvertisementController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="280">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1372#1373#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/conf/Conf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/urls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="400">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 package az.stepit.booking.dao.dto;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
@@ -32,6 +33,7 @@ public class Hotel {
 
     @ManyToOne
     @JoinColumn(name = "city_id")
+    @JsonManagedReference
     private City city;
 
     @ManyToOne

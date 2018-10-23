@@ -34,14 +34,4 @@ public class Conf {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/advertisement/getAllAdvertisements").allowedOrigins("http://localhost:63342","http://localhost:8080");
-            }
-        };
-    }
-
 }

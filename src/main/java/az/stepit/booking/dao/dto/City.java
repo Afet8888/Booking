@@ -1,5 +1,7 @@
 package az.stepit.booking.dao.dto;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,6 +18,7 @@ public class City {
     private String name;
 
     @OneToMany(mappedBy = "city")
+    @JsonBackReference
     List<Hotel> hotels;
 
     private String label;

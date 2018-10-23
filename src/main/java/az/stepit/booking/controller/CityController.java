@@ -34,7 +34,7 @@ public class CityController {
         return cityService.getById(id);
     }
 
-    @GetMapping
+    @GetMapping("/findAll")
     public List<City> findAll() {
         return cityService.findAll();
     }

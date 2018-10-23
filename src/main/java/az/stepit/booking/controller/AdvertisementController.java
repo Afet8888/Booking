@@ -8,11 +8,11 @@ import az.stepit.booking.service.impl.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @RestController
 @RequestMapping("/advertisement")
-//@CrossOrigin(origins = {"http://localhost:63342","http://localhost:8080"})
 public class AdvertisementController {
 
     @Autowired

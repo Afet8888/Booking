@@ -64,9 +64,7 @@ public class CityServiceImpl implements AbstractService<City,Long> {
     @Override
     public List<City> findAll() {
         List<City> cities = (List<City>) cityRepository.findAll();
-        return cities
-                .parallelStream()
-                .collect(Collectors.toList());
+        return cities;
     }
 
 }
