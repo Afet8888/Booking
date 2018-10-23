@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+    .mySlides {display:none}
+</style>
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+        <h3>Best</h3>
+        <h3>booking</h3>
+        <h6>in the world</h6>
+        <hr>
+        <form action="/action_page.php" target="_blank">
+            <p><label><i class="fa fa-calendar-check-o"></i> Äàòà çàåçäà</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+            <p><label><i class="fa fa-calendar-o"></i> Äàòà îòüåçäà</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+            <p><label><i class="fa fa-male"></i> Êîëè÷åñòâî âçðîñëûõ</label></p>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+            <p><label><i class="fa fa-child"></i> Êîëè÷åñòâî äåòåé</label></p>
+            <input class="w3-input w3-border" type="number" value="0" name="kids" min="0" max="6">
+            <p><label> Îòåëü</label></p>
+            <input class="w3-input w3-border" type="text"value="Hilton" name="hotel" >
+            <p><label> Êîëè÷åñòâî çâåçä</label></p>
+            <input class="w3-input w3-border" type="number" value="5" name="Kids" min="0" max="5">
+            <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Ïîèñê</button></p>
+        </form>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Îòåëè</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Íàøè êîíòàêòû</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <span class="w3-bar-item">Rental</span>
+    <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:80px"></div>
+
+    <!-- Slideshow Header -->
+    <!--<div class="w3-container" id="apartment">-->
+    <!--<h2 class="w3-text-green">The Apartment</h2>-->
+    <!--<div class="w3-display-container mySlides">-->
+    <!--<img src="pictures/main/Fairmont-1.jpg" style="width:100%;margin-bottom:-6px">-->
+    <!--<div class="w3-display-bottomleft w3-container w3-black">-->
+    <!--<p>Living Room</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-display-container mySlides">-->
+    <!--<img src="pictures/main/Fairmont-3.jpg" style="width:100%;margin-bottom:-6px">-->
+    <!--<div class="w3-display-bottomleft w3-container w3-black">-->
+    <!--<p>Dining Room</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-display-container mySlides">-->
+    <!--<img src="pictures/main/Fairmont-4.jpg" style="width:100%;margin-bottom:-6px">-->
+    <!--<div class="w3-display-bottomleft w3-container w3-black">-->
+    <!--<p>Bedroom</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-display-container mySlides">-->
+    <!--<img src="pictures/main/Fairmont-5.jpg" style="width:100%;margin-bottom:-6px">-->
+    <!--<div class="w3-display-bottomleft w3-container w3-black">-->
+    <!--<p>Living Room II</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-row-padding w3-section">-->
+    <!--<div class="w3-col s3">-->
+    <!--<img class="demo w3-opacity w3-hover-opacity-off" src="pictures/main/Fairmont-6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">-->
+    <!--</div>-->
+    <!--<div class="w3-col s3">-->
+    <!--<img class="demo w3-opacity w3-hover-opacity-off" src="pictures/main/Fairmont-7.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">-->
+    <!--</div>-->
+    <!--<div class="w3-col s3">-->
+    <!--<img class="demo w3-opacity w3-hover-opacity-off" src="/w3images/bedroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">-->
+    <!--</div>-->
+    <!--<div class="w3-col s3">-->
+    <!--<img class="demo w3-opacity w3-hover-opacity-off" src="/w3images/livingroom2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="w3-container">
+        <!--<h4><strong>The space</strong></h4>-->
+        <!--<div class="w3-row w3-large">-->
+        <!--<div class="w3-col s6">-->
+        <!--<p><i class="fa fa-fw fa-male"></i> Max people: 4</p>-->
+        <!--<p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>-->
+        <!--<p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>-->
+        <!--</div>-->
+        <!--<div class="w3-col s6">-->
+        <!--<p><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</p>-->
+        <!--<p><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<hr>-->
+
+        <h4><strong>Ëó÷øèå îòåëè ñòðàíû ñî âñåìè óäîáñòâàìè</strong></h4>
+        <div class="w3-row w3-large">
+            <div class="w3-col s6">
+                <p><i class="fa fa-fw fa-shower"></i> Äóø</p>
+                <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+                <p><i class="fa fa-fw fa-tv"></i> TV</p>
+                <p><i class="fa fa-fw fa-bath"></i> Âàííàÿ</p>
+
+            </div>
+            <div class="w3-col s6">
+                <p><i class="fa fa-fw fa-cutlery"></i> Ìåñòíûå áëþäà</p>
+                <p><i class="fa fa-fw fa-bed"></i> Ñïàëüíÿ</p>
+                <p><i class="fa fa-fw fa-thermometer"></i> Òåðìîêîíòðîëü</p>
+                <p><i class="fa fa-fw fa-wheelchair"></i> Çàáîòà îáî âñåæ</p>
+            </div>
+        </div>
+        <hr>
+
+        <h4><strong>Âàæíî!</strong></h4>
+        <p>Ìîæíî îïëàòèòü: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+        <hr>
+
+        <h4><strong>Îáùàÿ èíôîðìàöèÿ</strong></h4>
+
+        <p> Çäåñü ìîãëà áû áûòü âàøà ðåêëàìà </p>
+        <!--<p><button class="w3-button w3-green w3-third" onclick="document.getElementById('subscribe').style.display='block'">Find us on facebook</button></p>-->
+    </div>
+    <hr>
+
+    <!-- Contact -->
+    <div class="w3-container" id="contact">
+        <h2>Ñâÿçàòüñÿ ñ íàìè</h2>
+        <i class="fa fa-map-marker" style="width:30px"></i> Áàêó, Àçåðáàéäæàí<br>
+        <i class="fa fa-phone" style="width:30px"></i> Òåëåôîí: +9945515151515151<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Ìåéë: mail@mail.com<br>
+        <p>Åñòü âîïðîñû? Ñïðàøèâàéòå!</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Èìÿ" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Ìåéë" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Òåêñò" required name="Message"></p>
+            <button type="submit" class="w3-button w3-green w3-third">Îòïðàâèòü çàÿâêó</button>
+        </form>
+    </div>
+
+    <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></footer>
+
+    <!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-padding-large">
+        <div class="w3-container w3-white w3-center">
+            <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
+            <h2 class="w3-wide">Íàéäèòå íàñ íà ôåéñáóêå</h2>
+            <p>Join our mailing list to receive updates on available dates and special offers.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="w3-button w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Íàéäèòå íàñ íà ôåéñáóêå</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script to open and close sidebar when on tablets and phones
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Slideshow Apartment Images
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+    }
+</script>
+
+</body>
+</html>
