@@ -20,8 +20,7 @@ public class ApplicationUserRepository {
     };
 
     public void save(ApplicationUser user){
-        if (users.get(user.getUsername())==null)
-        users.put(user.getUsername(),user);
+        users.putIfAbsent(user.getUsername(), user);
     }
 
 }

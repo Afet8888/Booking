@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Booking" />
         <module name="booking" />
+        <module name="Booking2" />
         <module name="reservation" />
       </profile>
     </annotationProcessing>

@@ -6,7 +6,6 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 @Component
-
 public class AbstractFactory implements ApplicationContextAware {
     private ApplicationContext context;
 

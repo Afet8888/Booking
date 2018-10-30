@@ -1,4 +1,4 @@
-package az.stepit.booking.annatation;
+package az.stepit.booking.annotation;
 
 
 import java.lang.annotation.ElementType;

@@ -1,8 +1,6 @@
 package az.stepit.booking.constant;
 
-/**
- * Created by Sherif on 6/1/2018.
- */
+
 
 public class SecurityConstants {
     public static final String SECRET = "SecretKeyToGenJWTs";

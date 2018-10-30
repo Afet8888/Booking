@@ -1,11 +1,10 @@
 package az.stepit.booking.service.impl;
 
-import az.stepit.booking.annatation.ServiceMethod;
+import az.stepit.booking.annotation.ServiceMethod;
 import az.stepit.booking.dao.dto.Advertisement;
 import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.mapper.AdvertisementMapper;
 import az.stepit.booking.dao.repository.AdvertisementRepository;
-import az.stepit.booking.model.AdvertisementResponse;
 import az.stepit.booking.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

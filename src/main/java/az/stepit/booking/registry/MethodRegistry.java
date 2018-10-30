@@ -1,6 +1,6 @@
 package az.stepit.booking.registry;
 
-import az.stepit.booking.annatation.ServiceMethod;
+import az.stepit.booking.annotation.ServiceMethod;
 import org.reflections.Reflections;
 import org.reflections.scanners.MethodAnnotationsScanner;
 import org.reflections.scanners.SubTypesScanner;
@@ -23,7 +23,6 @@ public class MethodRegistry {
     }
 
     public static void setRegistry(Map<String,Map<String,Method>> registry) {
-
         MethodRegistry.registry = registry;
     }
 

@@ -1,12 +1,10 @@
 package az.stepit.booking.service.impl;
 
-import az.stepit.booking.annatation.ServiceMethod;
+import az.stepit.booking.annotation.ServiceMethod;
 import az.stepit.booking.constant.ServiceNames;
 import az.stepit.booking.dao.dto.Hotel;
 import az.stepit.booking.dao.dto.SearchDTO;
-import az.stepit.booking.dao.dto.Star;
 import az.stepit.booking.dao.mapper.HotelMapper;
-import az.stepit.booking.dao.mapper.StarMapper;
 import az.stepit.booking.dao.repository.HotelRepository;
 import az.stepit.booking.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;

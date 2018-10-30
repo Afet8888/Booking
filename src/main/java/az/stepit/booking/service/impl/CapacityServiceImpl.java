@@ -1,6 +1,6 @@
 package az.stepit.booking.service.impl;
 
-import az.stepit.booking.annatation.ServiceMethod;
+import az.stepit.booking.annotation.ServiceMethod;
 import az.stepit.booking.dao.dto.Capacity;
 import az.stepit.booking.dao.dto.SearchDTO;
 import az.stepit.booking.dao.mapper.CapacityMapper;
