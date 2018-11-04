@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <link rel="stylesheet" href="css/booking_2.css">
+
+    <title>Go to Trip!</title>
+</head>
+<body>
+<div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+        <a class="navbar-brand" href="#">
+            <img src="css/images_2/loupe.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Booking Site
+        </a>
+		
+		<a class="nav-link text-danger" href="#">
+         <i class="fa fa-phone"></i>   Связаться с нами
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i>   Поиск</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="row mt-3">
+        <div class="col-4">
+            <div class="card text-danger font-weight-bold">
+                <div class="card-header text-center">
+                    Найди свой райский уголок
+                </div>
+                <div class="card-body font-weight-bold">
+                    <form>
+                        <!--<div class="form-group">-->
+                            <!--<label for="country">Country</label>-->
+                            <!--<select class="form-control" id="country">-->
+                                <!--<option>Narnia</option>-->
+                                <!--<option>Neverland</option>-->
+                                <!--<option>Middlearth</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+                            <label for="city">Город</label>
+                            <select class="form-control" id="city">
+                                <option>Баку</option>
+                                <option>Габала</option>
+                                <option>Гянджа</option>
+                            </select>
+                        </div>
+						
+						 <div class="form-group font-weight-bold">
+                            <label for="date">Дата</label>
+                           <div class="font-weight-normal">
+						   <div class="text-dark">
+                                    <label for="fromDate">От</label>
+                                    <input type="date" class="form-control" id="fromDate" value="0">
+                                </div>
+
+                                <div class="text-dark">
+                                    <label for="toDate">До</label>
+                                    <input type="date" class="form-control" id="toDate" value="0">
+                                </div>
+						   </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hotel">Отель</label>
+                            <select class="form-control" id="hotel">
+                                <option>Hilton</option>
+                                <option>Fairmont</option>
+                                <option>Jb Marriott</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stars">Количество звезд </label>
+                            <select class="form-control" id="stars">
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="room">Тип комнаты</label>
+                            <select class="form-control" id="room">
+                                <option>Standard</option>
+                                <option>Lux</option>
+                                <option>We can give you chair</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="room">Количество людей</label>
+                            <select class="form-control" id="capacity">
+                            </select>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="currency">Цена</label>
+
+                            <div class="row font-weight-normal">
+                                <div class="col-4">
+                                    <label for="from">От</label>
+                                    <input type="number" class="form-control" id="from" value="0">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="to">До</label>
+                                    <input type="number" class="form-control" id="to" value="0">
+                                </div>
+								
+								<div class="col-4">
+									<label for="currency">Валюта</label>
+									<select class="form-control" id="currency">
+										<option>AZN</option>
+										<option>USD</option>
+										<option>GOLD</option>
+									</select>
+								</div>
+                            </div>
+                        </div>
+
+
+                        
+
+                        <!--<button type="button" class="btn btn-danger col-12 mt-4" onclick="getAll()">Поиск</button>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <div class=" card text-danger font-weight-bold">
+
+                <div class="card-header text-center">
+                    Самые популярные
+                </div>
+
+                <div class="card-body font-weight-bold">
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#"><i class="fa fa-arrow-up"></i>   Цена</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa fa-arrow-up"></i>   Звезды</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa fa-arrow-up"></i>   Алфавит</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Фильтр</a>
+  </li>
+</ul>
+                    <div class="list-group p-3">
+
+                        <div class="card border-dark list-group-item list-group-item-action flex-column mb-3">
+
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-danger">Hilton</h5>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class="card-img-top " src="css/images_2/download.png" width="180" height="150"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="col-7">
+                                        <p class="card-text">Крутейший отель.</p>
+                                        <button class="btn btn-danger mt-3 float-right ">Подробнее...</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card border-dark list-group-item list-group-item-action flex-column mb-3">
+
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-danger">MoonLight</h5>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class="card-img-top" src="css/images_2/Hilton Hotel Port Moresby.jpg"
+                                             width="180" height="150"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="col-7">
+                                        <p class="card-text">Такой же как и Хилтон.</p>
+                                        <button class="btn btn-danger mt-3 float-right ">Подробнее...</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card border-dark list-group-item list-group-item-action flex-column mb-3">
+
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-danger">Days</h5>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class="card-img-top" src="css/images_2/Hilton_Moresby_Exterior_FP.jpg"
+                                             width="180" height="150"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="col-7">
+                                        <p class="card-text">Любой каприз за ваши деньги.</p>
+                                        <button class="btn btn-danger mt-3 float-right ">Подробнее...</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/test.js"  type="application/javascript"></script>
+<script src="js/filter.js"  type="application/javascript"></script>
+<script src="js/utility.js"  type="application/javascript"></script>
+<script src="js/urls.js"  type="application/javascript"></script>
+</body>
+</html>

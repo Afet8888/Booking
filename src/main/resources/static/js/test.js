@@ -1,6 +1,18 @@
+$(document).ready(function () {
+    getAll();
+})
+
 let def_callback = function (d) {
     console.log(d);
 };
+
+let getAllAdvertsCallback = function (d) {
+    buildFilters(d.filters)
+};
+
+
+
+
 
 let buildSearchDto = function () {
     let searchDto = {};
@@ -13,7 +25,7 @@ let getAll = function () {
     let url = urls.getAllAdvertisementsByFilterUrl;
     let searchDto = buildSearchDto();
     console.log(JSON.stringify(searchDto));
-    utility.post(url, searchDto, def_callback);
+    utility.post(url, searchDto, getAllAdvertsCallback);
 };
 
 let city_callback = function (d) {
