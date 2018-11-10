@@ -10,10 +10,6 @@ let getAllAdvertsCallback = function (d) {
     buildFilters(d.filters)
 };
 
-
-
-
-
 let buildSearchDto = function () {
     let searchDto = {};
     searchDto.limit = 2;
@@ -57,8 +53,4 @@ let getStars = function () {
     let url = urls.getAllStarsUrl;
     utility.get(url, star_callback);
 };
-
-
-
-
 

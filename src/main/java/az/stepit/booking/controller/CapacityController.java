@@ -34,7 +34,7 @@ public class CapacityController {
         return capacityService.getById(id);
     }
 
-    @GetMapping
+    @GetMapping ("/findAll")
     public List<Capacity> findAll() {
         return capacityService.findAll();
     }
