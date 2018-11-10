@@ -34,7 +34,7 @@ public class StarController {
         return starService.getById(id);
     }
 
-    @GetMapping("/findall")
+    @GetMapping("/findAll")
     public List<Star> findAll() {
         return starService.findAll();
     }

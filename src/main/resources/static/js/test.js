@@ -54,3 +54,17 @@ let getStars = function () {
     utility.get(url, star_callback);
 };
 
+let capacity_callback = function (d) {
+    let list = d;
+    let s = '';
+    list.forEach(function (capacity) {
+        s= s.concat('<p>'+capacity.name+'</p>\n');
+    });
+    console.log(s);
+    $('body').append(s);
+};
+
+let getCapacity = function () {
+    let url = urls.getAllCapacityUrl;
+    utility.get(url, capacity_callback);
+};
