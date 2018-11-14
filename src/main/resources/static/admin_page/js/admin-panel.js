@@ -1,16 +1,17 @@
 let info = [];
 
-let addAdvertisement = $("addAdvertisement");
-let addCity = $("addCity");
-let addStar = $("addStar");
-let addHotel = $("addHotel");
-let addCapacity = $("addCapacity");
-let addType = $("addType");
+let addAdvertisement = $("#addAdvertisement");
+let addCity = $("#addCity");
+let addStar = $("#addStar");
+let addHotel = $("#addHotel");
+let addCapacity = $("#addCapacity");
+let addType = $("#addType");
+let dataTableRow = $("#dataTable tbody");
 
-let result = $("output");
+let result = $("#output");
 
 function add() {
-    let info = {
+    let info1 = {
         advertisement: addAdvertisement.val(),
         city: addCity.val(),
         star: addStar.val(),
@@ -25,16 +26,23 @@ function add() {
     addCapacity.val("");
     addType.val("");
 
-    info.push(info);
+    info.push(info1);
 }
 function showAll() {
 
     let table = "";
     for (let i = 0; i < info.length; i++) {
-       let i = info[i];
-
-            table += '<li class="list-group-item">' + i.advertisement + '   ' + i.city + '   ' + i.star + '   ' + i.hotel + '   ' + i.capacity + '   ' + i.type + '</li>li>'
+        console.log(info)
+       let item = info[i];
+            table +='<tr>';
+            table += '<td>' + item.advertisement +'</td>';
+            table += '<td>' + item.city  + '</td>';
+            table += '<td>' + item.star  + '</td>';
+            table += '<td>' + item.hotel  + '</td>';
+            table += '<td>' + item.capacity  + '</td>';
+            table += '<td>' + item.type  + '</td>';
+        table +='</tr>';
         }
-
-    $("#output").html(table);
+        console.log(table)
+    dataTableRow.html(table);
 }
