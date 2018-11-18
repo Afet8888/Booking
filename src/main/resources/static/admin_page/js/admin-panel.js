@@ -6,6 +6,9 @@ let addStar = $("#addStar");
 let addHotel = $("#addHotel");
 let addCapacity = $("#addCapacity");
 let addType = $("#addType");
+let addPrice = $("#addPrice");
+let advCurrency = $("#advCurrency");
+let addCurrency = $("#addCurrency");
 let dataTableRow = $("#dataTable tbody");
 
 let result = $("#output");
@@ -17,7 +20,10 @@ function add() {
         star: addStar.val(),
         hotel: addHotel.val(),
         capacity: addCapacity.val(),
-        type: addType.val()
+        type: addType.val(),
+        price: addPrice.val(),
+        advcurrency: advCurrency.val(),
+        currency: addCurrency.val()
     };
     addAdvertisement.val("");
     addCity.val("");
@@ -25,10 +31,14 @@ function add() {
     addHotel.val("");
     addCapacity.val("");
     addType.val("");
+    addPrice.val("");
+    addCurrency.val("");
+    advCurrency.val("");
+
 
     info.push(info1);
-}
-function showAll() {
+// }
+// function showAll() {
 
     let table = "";
     for (let i = 0; i < info.length; i++) {
@@ -41,6 +51,8 @@ function showAll() {
             table += '<td>' + item.hotel  + '</td>';
             table += '<td>' + item.capacity  + '</td>';
             table += '<td>' + item.type  + '</td>';
+            table += '<td>' + item.price  + '</td>';
+            table += '<td>' + item.advcurrency  + '</td>';
         table +='</tr>';
         }
         console.log(table)

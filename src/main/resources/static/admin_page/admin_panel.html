@@ -236,25 +236,49 @@
         <!-- Page Content -->
 
     <div class="container">
-            <div class="row mt-3">
-                <div class="p-2"><h6>Add Advertisement:</h6></div>
-                <div class="p-2"><input type="text" class="form-control" style="height:2em" placeholder="Add Advertisement" id="addAdvertisement"></div>
-            </div>
 
             <div class="row mt-3">
+                <div class=" mt-4 p-1"><h6>Add Advertisement:</h6></div>
+                <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Advert" id="addAdvertisement"></div>
+                                <div class="col-2">
+        <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Price" id="addPrice"></div>
+    </div>
+        <div class="col-2">
+            <label for="currency">Currency</label>
+            <select class="form-control" id="advCurrency">
+                <option>AZN</option>
+                <option>USD</option>
+                <option>EURO</option>
+            </select>
+        </div>
+
+        <div class="col-2">
+    <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Picture" id="addPicture"></div>
+</div>
+        <div class="col-2">
+<div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Hotel Description" id="addHotelDescription"></div>
+</div>
+</div>
+
+        <div class="row mt-3">
+            <div class="p-1 mt-4"><h6>Add Hotel:</h6></div>
+            <div class="mt-4 col-lg-2"><input type="text" class="form-control" style="height: 2em" placeholder="Add Hotel"
+                                          id="addHotel"></div>
+
                 <div class=" col-lg-2">
-                <div class="form-group">
-                    <label >City</label>
-                    <select class="form-control" id="addCity">
-                        <option>Баку</option>
-                        <option>Габала</option>
-                        <option>Гянджа</option>
-                        <option>Губа</option>
-                        <option>Ленкорань</option>
-                        <option>Шеки</option>
-                    </select>
+                    <div class="form-group">
+                        <label >City</label>
+                        <select class="form-control" id="addCity">
+                            <option>Баку</option>
+                            <option>Габала</option>
+                            <option>Гянджа</option>
+                            <option>Губа</option>
+                            <option>Ленкорань</option>
+                            <option>Шеки</option>
+                        </select>
+                    </div>
                 </div>
-                </div>
+            <div class=" col-lg-2">
                 <div class="form-group">
                     <label >Stars </label>
                     <select class="form-control" id="addStar">
@@ -265,9 +289,15 @@
                         <option>5 звезд</option>
                     </select>
                 </div>
-                <div class=" col-lg-2"><input type="text" class="form-control" style="height: 2em" placeholder="Add Hotel"
-                                          id="addHotel"></div>
-                <div class="form-group">
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="p-1 mt-4"><h6>Add Room:</h6></div>
+
+            <div class=" col-lg-2">
+                        <div class="form-group">
                     <label >Capacity</label>
                     <select class="form-control" id="addCapacity">
                         <option>Single</option>
@@ -276,6 +306,9 @@
                         <option>Triple Plus</option>
                     </select>
                 </div>
+            </div>
+
+                <div class=" col-lg-2">
                 <div class="form-group">
                     <label >Type</label>
                     <select class="form-control" id="addType">
@@ -293,23 +326,44 @@
                         <option>Студио</option>
                     </select>
                 </div>
-
-                <div class=" col-lg-2">
-                        <button class="btn btn-primary btn-block" onclick="add()">ADD</button>
-                    </div>
-            </div>
-
-            <div class="row mt-3">
-                <div class="col-lg-2">
-                    <button class="btn btn-primary btn-block" onclick="showAll()">
-                        SHOW ALL
-                    </button>
                 </div>
+            <div class="col-3">
+                <div class="p-2 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Room Description" id="addRoomDescription"></div>
             </div>
+
+            <div class="col-2">
+                <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Price" id="addPrice"></div>
+            </div>
+            <div class="col-2">
+                <label for="currency">Currency</label>
+                <select class="form-control" id="currency">
+                    <option>AZN</option>
+                    <option>USD</option>
+                    <option>EURO</option>
+                </select>
+            </div>
+
+            </div>
+
+        <div class="row mt-3">
+        <div class=" col-lg-2">
+            <button class="btn btn-primary btn-block" onclick="add()">ADD</button>
+        </div>
+        </div>
+            <!--<div class="row mt-3">-->
+                <!--<div class="col-lg-2">-->
+                    <!--<button class="btn btn-primary btn-block" onclick="showAll()">-->
+                        <!--SHOW ALL-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <div class="row mt-3">
                     <ul class="list-group" id="output"></ul>
             </div>
+
+
+
     </div>
 
                 <div class="card mb-3">
@@ -328,6 +382,8 @@
                                     <th>Hotel</th>
                                     <th>Capacity</th>
                                     <th>Type</th>
+                                    <th>Price</th>
+                                    <th>Currency</th>
                                     <th>Edit/Delete</th>
                                 </tr>
                                 </thead>
@@ -339,6 +395,8 @@
                                     <th>Hotel</th>
                                     <th>Capacity</th>
                                     <th>Type</th>
+                                    <th>Price</th>
+                                    <th>Currency</th>
                                     <th>Edit/Delete</th>
                                 </tr>
                                 </tfoot>
@@ -350,6 +408,8 @@
                                     <td>Hilton</td>
                                     <td>2</td>
                                     <td>Standart</td>
+                                    <td>125</td>
+                                    <td>AZN</td>
                                     <td>Edit/Delete</td>
                                 </tr>
                                 </tbody>
