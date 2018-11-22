@@ -20,10 +20,15 @@ function sortPrice() {
 
 let name = [];
 function sortName() {
-    price.sort();
+    name.sort();
     let n = "";
     for (let i = 0; i<name.length; i++) {
         n += '<li class="list-group-item">' + name[i] + '</li>'
     }
     $("#output").html(n);
 }
+
+// function goTo() {
+//     window.location.assign("https://localhost:63342/Booking/static/hotel.html")
+//
+// }

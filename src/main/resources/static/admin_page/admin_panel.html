@@ -36,16 +36,32 @@
     </button>
 
     <!-- Navbar Search -->
-    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search"
-                   aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
+    <!--<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">-->
+        <!--<div class="input-group">-->
+            <!--<input type="text" class="form-control" placeholder="Search for..." aria-label="Search"-->
+                   <!--aria-describedby="basic-addon2">-->
+            <!--<div class="input-group-append">-->
+                <!--<button class="btn btn-primary" type="button">-->
+                    <!--<i class="fas fa-search"></i>-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</form>-->
+
+    <!--<form>-->
+        <!--<input type="search" name="text">-->
+        <!--<input type="submit" value="Search">-->
+        <!--<button class="btn btn-primary" type="button">-->
+            <!--<i class="fas fa-search"></i>-->
+        <!--</button>-->
+    <!--</form>-->
+
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0" action="">
+        <p><input type=search placeholder="Введите текст для поиска">
+            <input type="submit" value="Search"></p>
+        <button class="btn btn-primary" type="button">
+        <i class="fas fa-search"></i>
+        </button>
     </form>
 
     <!-- Navbar -->
@@ -241,10 +257,10 @@
                 <div class=" mt-4 p-1"><h6>Add Advertisement:</h6></div>
                 <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Advert" id="addAdvertisement"></div>
                                 <div class="col-2">
-        <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Price" id="addPrice"></div>
+        <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Advert Price" id="advPrice"></div>
     </div>
         <div class="col-2">
-            <label for="currency">Currency</label>
+            <label>Currency</label>
             <select class="form-control" id="advCurrency">
                 <option>AZN</option>
                 <option>USD</option>
@@ -252,12 +268,14 @@
             </select>
         </div>
 
-        <div class="col-2">
-    <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Picture" id="addPicture"></div>
+                <div class="col-2">
+                    <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Advert Description" id="advDescription"></div>
+                </div>
+                    <div class="col-2">
+    <div class="p-1 mt-4"><input type="image" src = "" class="form-control" style="height:2em" placeholder="Adv Picture" id="advPicture"></div>
 </div>
-        <div class="col-2">
-<div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Hotel Description" id="addHotelDescription"></div>
-</div>
+
+
 </div>
 
         <div class="row mt-3">
@@ -289,6 +307,9 @@
                         <option>5 звезд</option>
                     </select>
                 </div>
+            </div>
+            <div class="col-2">
+                <div class="p-1 mt-4"><input type="image" src = "" class="form-control" style="height:2em" placeholder="Hotel Picture" id="hotelPicture"></div>
             </div>
         </div>
 
@@ -328,23 +349,21 @@
                 </div>
                 </div>
             <div class="col-3">
-                <div class="p-2 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Room Description" id="addRoomDescription"></div>
+                <div class="p-2 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Room Description" id="roomDescription"></div>
             </div>
 
             <div class="col-2">
-                <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Price" id="addPrice"></div>
+                <div class="p-1 mt-4"><input type="text" class="form-control" style="height:2em" placeholder="Add Room Price" id="roomPrice"></div>
             </div>
-            <div class="col-2">
-                <label for="currency">Currency</label>
-                <select class="form-control" id="currency">
+                <div class="col-2">
+                <label>Currency</label>
+                <select class="form-control" id="roomCurrency">
                     <option>AZN</option>
                     <option>USD</option>
                     <option>EURO</option>
                 </select>
             </div>
-
             </div>
-
         <div class="row mt-3">
         <div class=" col-lg-2">
             <button class="btn btn-primary btn-block" onclick="add()">ADD</button>
@@ -362,60 +381,98 @@
                     <ul class="list-group" id="output"></ul>
             </div>
 
-
-
     </div>
 
                 <div class="card mb-3">
                     <div class="card-header">
                         <i class="fas fa-table"></i>
-                        Hotels Info
+                        Advertisements Info
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <table class="table table-bordered" id="dataTable1" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
                                     <th>Advertisement</th>
-                                    <th>City</th>
-                                    <th>Stars</th>
-                                    <th>Hotel</th>
-                                    <th>Capacity</th>
-                                    <th>Type</th>
                                     <th>Price</th>
                                     <th>Currency</th>
+                                    <th>Description</th>
                                     <th>Edit/Delete</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>Advertisement</th>
-                                    <th>City</th>
-                                    <th>Stars</th>
-                                    <th>Hotel</th>
-                                    <th>Capacity</th>
-                                    <th>Type</th>
                                     <th>Price</th>
                                     <th>Currency</th>
+                                    <th>Description</th>
                                     <th>Edit/Delete</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
                                 <tr>
-                                    <td>Hilton</td>
-                                    <td>Baku</td>
-                                    <td>Five</td>
-                                    <td>Hilton</td>
-                                    <td>2</td>
-                                    <td>Standart</td>
-                                    <td>125</td>
-                                    <td>AZN</td>
-                                    <td>Edit/Delete</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-table"></i>
+                            Hotels and Rooms Info
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable2" width="100%" cellspacing="0">
+                                    <thead>
+                                    <tr>
+                                        <th>Hotel</th>
+                                        <th>City</th>
+                                        <th>Stars</th>
+                                        <th>Capacity</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Currency</th>
+                                        <th>Edit/Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Hotel</th>
+                                        <th>City</th>
+                                        <th>Stars</th>
+                                        <th>Capacity</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Currency</th>
+                                        <th>Edit/Delete</th>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                 </div>
 

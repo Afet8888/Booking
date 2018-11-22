@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cf02f-8a9e-4ab3-8ba4-f6f779df6758" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/finish.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/booking.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/hotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/hotel_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/Hilton Hotel Port Moresby.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/Hilton_Moresby_Exterior_FP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/back_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/bg_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/bg_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images_2/download.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main_page.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +57,17 @@
       <file leaf-file-name="index_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3234">
-              <caret line="154" column="45" selection-start-line="150" selection-start-column="32" selection-end-line="157" selection-end-column="38" />
+            <state relative-caret-position="231">
+              <caret line="210" column="34" lean-forward="true" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finish.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/finish.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3549">
+              <caret line="169" column="65" selection-start-line="169" selection-start-column="65" selection-end-line="169" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -49,8 +75,8 @@
       <file leaf-file-name="index_2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index_2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="231">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -58,8 +84,8 @@
       <file leaf-file-name="admin_panel.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="248" column="36" lean-forward="true" selection-start-line="248" selection-start-column="36" selection-end-line="248" selection-end-column="36" />
+            <state relative-caret-position="295">
+              <caret line="463" column="49" lean-forward="true" selection-start-line="463" selection-start-column="49" selection-end-line="463" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -67,8 +93,26 @@
       <file leaf-file-name="admin-panel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="1146">
+              <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="36" column="105" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/filter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -97,12 +141,18 @@
       <find>ServiceMethod</find>
       <find>LoggerAspect</find>
       <find>form</find>
-      <find>image</find>
       <find>Add Advertisement</find>
       <find>addAd</find>
       <find>output</find>
       <find>addCity</find>
       <find>addStar</find>
+      <find>image</find>
+      <find>img</find>
+      <find>card-img</find>
+      <find>card</find>
+      <find>exampleFormControlInput1</find>
+      <find>dataTable1</find>
+      <find>info1</find>
     </findStrings>
     <replaceStrings>
       <replace>advertisement</replace>
@@ -116,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/service/impl/ReservationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/CommonController.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/UserController.java" />
@@ -156,17 +205,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/js/test.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/urls.js" />
         <option value="$PROJECT_DIR$/src/main/java/az/stepit/booking/controller/StarController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin_page/404.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin_page/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/booking_2.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/main_page.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index_2.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/hotel.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/finish.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/index_2.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/about.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/hotel.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index_2.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html" />
       </list>
     </option>
   </component>
@@ -250,50 +300,13 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_page" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Booking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Booking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,22 +316,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Booking-master_ism_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML_JS_AJAX/javascript_11.03_rust" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static" />
+      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static\css" />
+      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking_2\Booking_2\src\main\resources\static" />
+      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking" />
+      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="az.stepit.booking" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static\images_2" />
-      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static" />
-      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static\admin_page" />
-      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static\admin_page" />
-      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="az.stepit.booking.service" />
@@ -327,12 +340,12 @@
       <recent name="az.stepit.booking.controller" />
       <recent name="az.stepit.booking.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static" />
+      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static\images_2" />
+      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src\main\resources\static\admin_page" />
+      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static\admin_page" />
       <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static" />
-      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking\src\main\resources\static\css" />
-      <recent name="C:\Users\Ahme_nl17\IdeaProjects\Booking_2\Booking_2\src\main\resources\static" />
-      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking" />
-      <recent name="C:\Users\Gassan Ahmedov\IdeaProjects\Booking\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -486,7 +499,10 @@
       <workItem from="1542105714761" duration="13935000" />
       <workItem from="1542183314549" duration="15719000" />
       <workItem from="1542208546488" duration="5604000" />
-      <workItem from="1542525340558" duration="1863000" />
+      <workItem from="1542525340558" duration="2590000" />
+      <workItem from="1542737707639" duration="4635000" />
+      <workItem from="1542785365627" duration="25200000" />
+      <workItem from="1542892741460" duration="8051000" />
     </task>
     <task id="LOCAL-00001" summary="22.09.2018_urok">
       <created>1537626688081</created>
@@ -551,11 +567,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540907377500</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="18.11.2018">
+      <created>1542535905276</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542535905276</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246865000" />
+    <option name="totallyTimeSpent" value="285478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1384" height="752" extended-state="6" />
@@ -581,7 +604,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.29881155" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32629356" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.14831804" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32874617" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -593,7 +616,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.5611052" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3273495" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32597622" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +639,8 @@
     <MESSAGE value="22.10.2018_urok" />
     <MESSAGE value="30.10.2018" />
     <MESSAGE value="30.10.2018_urok" />
-    <option name="LAST_COMMIT_MESSAGE" value="30.10.2018_urok" />
+    <MESSAGE value="18.11.2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.11.2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,157 +652,52 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6846">
-          <caret line="326" column="29" lean-forward="true" selection-start-line="326" selection-start-column="29" selection-end-line="326" selection-end-column="29" />
+        <state relative-caret-position="4200">
+          <caret line="200" column="117" selection-start-line="200" selection-start-column="93" selection-end-line="200" selection-end-column="117" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/finish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5985">
-          <caret line="285" column="14" selection-start-line="270" selection-start-column="8" selection-end-line="285" selection-end-column="14" />
+        <state relative-caret-position="3549">
+          <caret line="169" column="65" lean-forward="true" selection-start-line="169" selection-start-column="65" selection-end-line="169" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/booking_2.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index_2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="378">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        <state relative-caret-position="756">
+          <caret line="36" column="105" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/filter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="198" column="33" selection-start-line="198" selection-start-column="33" selection-end-line="198" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="280" column="6" selection-start-line="280" selection-start-column="6" selection-end-line="280" selection-end-column="6" />
+        <state relative-caret-position="126">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="260" column="36" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4760">
-          <caret line="280" column="6" selection-start-line="280" selection-start-column="6" selection-end-line="280" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4845">
-          <caret line="285" column="14" lean-forward="true" selection-start-line="270" selection-start-column="8" selection-end-line="285" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="198" column="33" lean-forward="true" selection-start-line="198" selection-start-column="33" selection-end-line="198" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="133" selection-start-line="65" selection-start-column="127" selection-end-line="65" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="260" column="36" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CurrencyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/CapacityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/AdvertisementMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/mapper/ReservationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/dao/dto/SearchDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/stepit/booking/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="10563">
+          <caret line="503" column="10" lean-forward="true" selection-start-line="503" selection-start-column="10" selection-end-line="503" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -788,13 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
@@ -854,27 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/booking_2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/filter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/utility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -896,48 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/js/sb-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="198" column="33" selection-start-line="198" selection-start-column="33" selection-end-line="198" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5985">
-          <caret line="285" column="14" selection-start-line="270" selection-start-column="8" selection-end-line="285" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -945,31 +794,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel_page.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/js/sb-admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="65" column="133" selection-start-line="65" selection-start-column="127" selection-end-line="65" selection-end-column="133" />
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="154" column="45" selection-start-line="150" selection-start-column="32" selection-end-line="157" selection-end-column="38" />
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/booking_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/css/sb-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-434">
+          <caret line="244" column="5" selection-start-line="244" selection-start-column="1" selection-end-line="244" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hotel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Booking_2/src/main/resources/static/hotel_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Booking_2/src/main/resources/static/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="285" column="14" selection-start-line="270" selection-start-column="8" selection-end-line="285" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/finish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3549">
+          <caret line="169" column="65" selection-start-line="169" selection-start-column="65" selection-end-line="169" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="105" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/js/admin-panel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="1146">
+          <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="210" column="34" lean-forward="true" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin_page/admin_panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="248" column="36" lean-forward="true" selection-start-line="248" selection-start-column="36" selection-end-line="248" selection-end-column="36" />
+        <state relative-caret-position="295">
+          <caret line="463" column="49" lean-forward="true" selection-start-line="463" selection-start-column="49" selection-end-line="463" selection-end-column="49" />
         </state>
       </provider>
     </entry>
