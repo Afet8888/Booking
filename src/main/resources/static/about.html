@@ -196,8 +196,9 @@
                                     <label for="exampleFormControlTextarea1">Опишите, что вы ищете</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
-                                <button onclick="window.location='http://localhost:63342/Booking/static/finish.html'" href="mailto:baku.9999@hotmail.com">Отправить письмо</button>
-                                <p><a href="mailto:baku.9999@hotmail.com">Задавайте вопросы по электронной почте</a></p>
+                                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-block" href="mailto:baku.9999@hotmail.com" >Отправить письмо</button>
+                                <!--<button onclick="window.location='http://localhost:63342/Booking/static/finish.html'" href="mailto:baku.9999@hotmail.com">Отправить письмо</button>-->
+                                <!--<p><a href="mailto:baku.9999@hotmail.com">Задавайте вопросы по электронной почте</a></p>-->
                             </form>
                             </div>
                             <!--<div class="col-12 mt-3">-->
@@ -225,6 +226,23 @@
 
     </div>
 
+</div>
+
+<div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ваше письмо отправлено</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Спасибо, что выбрали нас<span id="name"></span></p>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 
